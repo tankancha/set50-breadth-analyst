@@ -1,0 +1,869 @@
+{
+  "scraped_at": "2026-06-26T23:00:00+07:00",
+  "trading_date": "2026-06-26",
+  "symbol": "S50M26",
+  "series_label": "2026-06 (M)",
+  "quarter_code": "M",
+  "last_trading_date": "2026-06-29",
+  "future_last": 1012.5,
+  "future_chg": -2,
+  "underlying_index": null,
+  "atm_strike": 1010.0,
+  "iv_atm": 15.858,
+  "totals": {
+    "call_oi": 28735.0,
+    "put_oi": 55655.0,
+    "call_vol": 3242.0,
+    "put_vol": 5916.0,
+    "pc_oi_ratio": 1.9368,
+    "pc_vol_ratio": 1.8248
+  },
+  "max_pain": 990.0,
+  "delta_bands": {
+    "call_25d": 1020.0,
+    "call_10d": 1030.0,
+    "put_25d": 1000.0,
+    "put_10d": 990.0
+  },
+  "one_sigma_move": 10.11,
+  "chain": [
+    {
+      "strike": 780.0,
+      "call": {
+        "oi": 1,
+        "vol": null,
+        "last": null,
+        "bid": 5.7,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1102
+      },
+      "put": {
+        "oi": 14152,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 131.1541,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 790.0,
+      "call": {
+        "oi": 5,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1099
+      },
+      "put": {
+        "oi": 2824,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.2,
+        "iv": 125.289,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 800.0,
+      "call": {
+        "oi": 19,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1096
+      },
+      "put": {
+        "oi": 2567,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 119.4715,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 810.0,
+      "call": {
+        "oi": 2,
+        "vol": null,
+        "last": null,
+        "bid": 8.6,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1094
+      },
+      "put": {
+        "oi": 530,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.3,
+        "iv": 113.7137,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 820.0,
+      "call": {
+        "oi": 11,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1091
+      },
+      "put": {
+        "oi": 1063,
+        "vol": 4.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.9,
+        "iv": 107.9917,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 830.0,
+      "call": {
+        "oi": 45,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1088
+      },
+      "put": {
+        "oi": 600,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 102.3293,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 840.0,
+      "call": {
+        "oi": 54,
+        "vol": null,
+        "last": null,
+        "bid": 6.9,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1086
+      },
+      "put": {
+        "oi": 598,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 1.0,
+        "iv": 96.7026,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 850.0,
+      "call": {
+        "oi": 15,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1083
+      },
+      "put": {
+        "oi": 1751,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 0.3,
+        "iv": 91.1236,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 860.0,
+      "call": {
+        "oi": 64,
+        "vol": null,
+        "last": null,
+        "bid": 9.3,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.108
+      },
+      "put": {
+        "oi": 771,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": 1.0,
+        "iv": 85.5803,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 870.0,
+      "call": {
+        "oi": 61,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1077
+      },
+      "put": {
+        "oi": 699,
+        "vol": 2.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 1.0,
+        "iv": 80.0729,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 880.0,
+      "call": {
+        "oi": 40,
+        "vol": null,
+        "last": null,
+        "bid": 100.0,
+        "ask": 300.0,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1075
+      },
+      "put": {
+        "oi": 1408,
+        "vol": 2.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 74.5952,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 890.0,
+      "call": {
+        "oi": 183,
+        "vol": null,
+        "last": null,
+        "bid": 100.0,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1072
+      },
+      "put": {
+        "oi": 464,
+        "vol": 2.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.5,
+        "iv": 69.1414,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 900.0,
+      "call": {
+        "oi": 127,
+        "vol": null,
+        "last": null,
+        "bid": null,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1069
+      },
+      "put": {
+        "oi": 2293,
+        "vol": 84.0,
+        "last": 0.1,
+        "bid": 0.1,
+        "ask": 0.4,
+        "iv": 63.7174,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 910.0,
+      "call": {
+        "oi": 120,
+        "vol": null,
+        "last": null,
+        "bid": 86.8,
+        "ask": null,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1066
+      },
+      "put": {
+        "oi": 1233,
+        "vol": 7.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 1.1,
+        "iv": 58.3053,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 920.0,
+      "call": {
+        "oi": 188,
+        "vol": null,
+        "last": null,
+        "bid": 78.3,
+        "ask": 105.0,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1064
+      },
+      "put": {
+        "oi": 919,
+        "vol": 1.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 52.9051,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 930.0,
+      "call": {
+        "oi": 273,
+        "vol": 10.0,
+        "last": 82.0,
+        "bid": 70.6,
+        "ask": 91.3,
+        "iv": 67.9716,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1061
+      },
+      "put": {
+        "oi": 1134,
+        "vol": 5.0,
+        "last": 0.3,
+        "bid": 0.1,
+        "ask": 0.5,
+        "iv": 55.2446,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 940.0,
+      "call": {
+        "oi": 704,
+        "vol": null,
+        "last": null,
+        "bid": 63.1,
+        "ask": 91.0,
+        "iv": null,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1058
+      },
+      "put": {
+        "oi": 1273,
+        "vol": null,
+        "last": null,
+        "bid": 0.1,
+        "ask": 0.3,
+        "iv": 42.1166,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      }
+    },
+    {
+      "strike": 950.0,
+      "call": {
+        "oi": 871,
+        "vol": 17.0,
+        "last": 70.3,
+        "bid": 54.0,
+        "ask": 79.0,
+        "iv": 105.6891,
+        "delta": 0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": 0.1054
+      },
+      "put": {
+        "oi": 1692,
+        "vol": 1.0,
+        "last": 0.1,
+        "bid": 0.1,
+        "ask": 1.0,
+        "iv": 36.7045,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": -0.0001
+      }
+    },
+    {
+      "strike": 960.0,
+      "call": {
+        "oi": 1146,
+        "vol": 42.0,
+        "last": 51.5,
+        "bid": 47.8,
+        "ask": 66.0,
+        "iv": 40.1184,
+        "delta": 0.9996,
+        "gamma": null,
+        "vega": 0.0005,
+        "theta": 0.1029
+      },
+      "put": {
+        "oi": 1650,
+        "vol": 1.0,
+        "last": 0.1,
+        "bid": 0.1,
+        "ask": 0.5,
+        "iv": 31.2626,
+        "delta": -0.0002,
+        "gamma": null,
+        "vega": 0.0005,
+        "theta": -0.0024
+      }
+    },
+    {
+      "strike": 970.0,
+      "call": {
+        "oi": 2066,
+        "vol": 75.0,
+        "last": 42.5,
+        "bid": 30.0,
+        "ask": 57.0,
+        "iv": 43.3892,
+        "delta": 0.9977,
+        "gamma": 0.0004,
+        "vega": 0.0049,
+        "theta": 0.0811
+      },
+      "put": {
+        "oi": 3007,
+        "vol": 22.0,
+        "last": 0.3,
+        "bid": 0.2,
+        "ask": 0.5,
+        "iv": 30.6398,
+        "delta": -0.0021,
+        "gamma": 0.0004,
+        "vega": 0.0049,
+        "theta": -0.0239
+      }
+    },
+    {
+      "strike": 980.0,
+      "call": {
+        "oi": 1307,
+        "vol": 96.0,
+        "last": 33.7,
+        "bid": 32.3,
+        "ask": 33.8,
+        "iv": 42.6322,
+        "delta": 0.9844,
+        "gamma": 0.0026,
+        "vega": 0.0289,
+        "theta": -0.038
+      },
+      "put": {
+        "oi": 1648,
+        "vol": 253.0,
+        "last": 0.6,
+        "bid": 0.5,
+        "ask": 0.9,
+        "iv": 28.0038,
+        "delta": -0.0153,
+        "gamma": 0.0026,
+        "vega": 0.0289,
+        "theta": -0.1428
+      }
+    },
+    {
+      "strike": 990.0,
+      "call": {
+        "oi": 974,
+        "vol": 71.0,
+        "last": 21.4,
+        "bid": 22.7,
+        "ask": 24.2,
+        "iv": 18.5862,
+        "delta": 0.9275,
+        "gamma": 0.0094,
+        "vega": 0.1029,
+        "theta": -0.4059
+      },
+      "put": {
+        "oi": 1715,
+        "vol": 574.0,
+        "last": 0.8,
+        "bid": 0.6,
+        "ask": 0.9,
+        "iv": 22.3294,
+        "delta": -0.0722,
+        "gamma": 0.0094,
+        "vega": 0.1029,
+        "theta": -0.5103
+      }
+    },
+    {
+      "strike": 1000.0,
+      "call": {
+        "oi": 1887,
+        "vol": 342.0,
+        "last": 13.6,
+        "bid": 13.7,
+        "ask": 14.7,
+        "iv": 22.5488,
+        "delta": 0.7776,
+        "gamma": 0.0203,
+        "vega": 0.2228,
+        "theta": -1.0077
+      },
+      "put": {
+        "oi": 1341,
+        "vol": 641.0,
+        "last": 1.5,
+        "bid": 1.5,
+        "ask": 1.8,
+        "iv": 17.7775,
+        "delta": -0.2221,
+        "gamma": 0.0203,
+        "vega": 0.2228,
+        "theta": -1.1119
+      }
+    },
+    {
+      "strike": 1010.0,
+      "call": {
+        "oi": 1589,
+        "vol": 811.0,
+        "last": 6.0,
+        "bid": 5.9,
+        "ask": 8.5,
+        "iv": 18.3437,
+        "delta": 0.5306,
+        "gamma": 0.0272,
+        "vega": 0.2977,
+        "theta": -1.3992
+      },
+      "put": {
+        "oi": 1660,
+        "vol": 1321.0,
+        "last": 3.5,
+        "bid": 3.4,
+        "ask": 3.8,
+        "iv": 13.3723,
+        "delta": -0.4691,
+        "gamma": 0.0272,
+        "vega": 0.2977,
+        "theta": -1.5031
+      }
+    },
+    {
+      "strike": 1020.0,
+      "call": {
+        "oi": 1910,
+        "vol": 757.0,
+        "last": 1.1,
+        "bid": 1.0,
+        "ask": 1.5,
+        "iv": 13.7545,
+        "delta": 0.2729,
+        "gamma": 0.0227,
+        "vega": 0.2488,
+        "theta": -1.1873
+      },
+      "put": {
+        "oi": 1608,
+        "vol": 1659.0,
+        "last": 8.7,
+        "bid": 8.3,
+        "ask": 9.3,
+        "iv": null,
+        "delta": -0.7268,
+        "gamma": 0.0227,
+        "vega": 0.2488,
+        "theta": -1.2909
+      }
+    },
+    {
+      "strike": 1030.0,
+      "call": {
+        "oi": 1580,
+        "vol": 823.0,
+        "last": 0.1,
+        "bid": 0.1,
+        "ask": 0.5,
+        "iv": 13.0057,
+        "delta": 0.1006,
+        "gamma": 0.012,
+        "vega": 0.1319,
+        "theta": -0.6341
+      },
+      "put": {
+        "oi": 905,
+        "vol": 552.0,
+        "last": 17.2,
+        "bid": 17.2,
+        "ask": 18.0,
+        "iv": null,
+        "delta": -0.8992,
+        "gamma": 0.012,
+        "vega": 0.1319,
+        "theta": -0.7375
+      }
+    },
+    {
+      "strike": 1040.0,
+      "call": {
+        "oi": 1205,
+        "vol": 60.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.3,
+        "iv": 18.4894,
+        "delta": 0.0258,
+        "gamma": 0.0041,
+        "vega": 0.045,
+        "theta": -0.217
+      },
+      "put": {
+        "oi": 626,
+        "vol": 569.0,
+        "last": 25.7,
+        "bid": 26.6,
+        "ask": 28.1,
+        "iv": null,
+        "delta": -0.9739,
+        "gamma": 0.0041,
+        "vega": 0.045,
+        "theta": -0.32
+      }
+    },
+    {
+      "strike": 1050.0,
+      "call": {
+        "oi": 1907,
+        "vol": 90.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.3,
+        "iv": 23.7018,
+        "delta": 0.0046,
+        "gamma": 0.0009,
+        "vega": 0.01,
+        "theta": -0.0483
+      },
+      "put": {
+        "oi": 285,
+        "vol": 66.0,
+        "last": 39.0,
+        "bid": 15.0,
+        "ask": null,
+        "iv": 19.8841,
+        "delta": -0.9952,
+        "gamma": 0.0009,
+        "vega": 0.01,
+        "theta": -0.1511
+      }
+    },
+    {
+      "strike": 1060.0,
+      "call": {
+        "oi": 1434,
+        "vol": 6.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.2,
+        "iv": 28.7175,
+        "delta": 0.0006,
+        "gamma": 0.0001,
+        "vega": 0.0015,
+        "theta": -0.0071
+      },
+      "put": {
+        "oi": 183,
+        "vol": 150.0,
+        "last": 47.0,
+        "bid": 5.5,
+        "ask": null,
+        "iv": null,
+        "delta": -0.9992,
+        "gamma": 0.0001,
+        "vega": 0.0015,
+        "theta": -0.1096
+      }
+    },
+    {
+      "strike": 1070.0,
+      "call": {
+        "oi": 1023,
+        "vol": 7.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.1,
+        "iv": 33.5753,
+        "delta": null,
+        "gamma": null,
+        "vega": 0.0001,
+        "theta": -0.0007
+      },
+      "put": {
+        "oi": 2,
+        "vol": null,
+        "last": null,
+        "bid": 35.0,
+        "ask": 360.0,
+        "iv": 34.6094,
+        "delta": -0.9997,
+        "gamma": null,
+        "vega": 0.0001,
+        "theta": -0.1029
+      }
+    },
+    {
+      "strike": 1080.0,
+      "call": {
+        "oi": 4963,
+        "vol": 35.0,
+        "last": 0.1,
+        "bid": null,
+        "ask": 0.4,
+        "iv": 38.3049,
+        "delta": null,
+        "gamma": null,
+        "vega": null,
+        "theta": null
+      },
+      "put": {
+        "oi": 3,
+        "vol": null,
+        "last": null,
+        "bid": 10.5,
+        "ask": 370.0,
+        "iv": 39.4702,
+        "delta": -0.9997,
+        "gamma": null,
+        "vega": null,
+        "theta": -0.102
+      }
+    }
+  ],
+  "synthetic": true
+}
