@@ -45,20 +45,53 @@ async () => {
 """
 
 
+# Wait until IV/Greeks cells have actually populated. TFEX computes them
+# client-side (the JSON API carries none), lazily as rows enter the viewport —
+# so OI/vol/last appear immediately but IV/Greeks lag and only fill for visible
+# rows. We use a tall viewport + scroll to force the compute, then poll the
+# IV column (cell index 7 = call IV, 15 = put IV) until enough rows are filled.
+_IV_READY_JS = """
+() => {
+  const t = document.querySelector('table'); if (!t) return false;
+  let n = 0;
+  for (const r of t.rows) {
+    const c = r.cells; if (c.length < 23) continue;
+    const civ = (c[7].innerText || '').trim();
+    const piv = (c[15].innerText || '').trim();
+    if ((civ && civ !== '-') || (piv && piv !== '-')) n++;
+  }
+  return n >= 8;
+}
+"""
+
+
 def scrape_board() -> dict:
     """Render the TFEX board and return the capture dict. Live path."""
     from playwright.sync_api import sync_playwright  # imported lazily
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+        # Tall viewport so most rows are "visible" and their Greeks compute.
+        page = browser.new_page(viewport={"width": 1440, "height": 2400})
         page.goto(BOARD_URL, wait_until="networkidle")
-        # Expand every contract-month accordion, then let rows render.
+        # Expand every contract-month accordion.
         page.evaluate(
             "() => { const b=[...document.querySelectorAll('button,a,[role=button]')]"
             ".find(x=>/expand all/i.test(x.textContent||'')); if(b) b.click(); }"
         )
-        page.wait_for_timeout(3000)
+        page.wait_for_timeout(1500)
+        # Scroll the whole page so lazily-computed IV/Greeks cells render.
+        page.evaluate(
+            "async () => { const h = document.body.scrollHeight;"
+            " for (let y = 0; y <= h; y += 500) { window.scrollTo(0, y);"
+            " await new Promise(r => setTimeout(r, 200)); } window.scrollTo(0, 0); }"
+        )
+        # Poll until IV actually populated (client-side compute can lag a few s).
+        try:
+            page.wait_for_function(_IV_READY_JS, timeout=30000)
+        except Exception:
+            pass  # harvest what we have rather than fail the whole run
+        page.wait_for_timeout(1000)
         capture = page.evaluate(_HARVEST_JS)
         browser.close()
     return capture
