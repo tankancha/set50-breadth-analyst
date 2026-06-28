@@ -102,11 +102,12 @@ def scrape_board() -> dict:
             " for (let y = 0; y <= h; y += 500) { window.scrollTo(0, y);"
             " await new Promise(r => setTimeout(r, 200)); } window.scrollTo(0, 0); }"
         )
-        # Poll until IV actually populated (client-side compute can lag a few s).
+        # Best-effort: if a real-browser environment serves IV quickly, grab it;
+        # otherwise move on — extract.py reconstructs IV/Greeks via Black-76.
         try:
-            page.wait_for_function(_IV_READY_JS, timeout=30000)
+            page.wait_for_function(_IV_READY_JS, timeout=6000)
         except Exception:
-            pass  # harvest what we have rather than fail the whole run
+            pass
         page.wait_for_timeout(1000)
         capture = page.evaluate(_HARVEST_JS)
         browser.close()

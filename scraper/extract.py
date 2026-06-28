@@ -20,6 +20,9 @@ board — Call legs on the left, Put legs mirrored on the right:
 from __future__ import annotations
 
 import math
+from datetime import date as _date
+
+from greeks import fill_chain
 
 # Column indices
 C_SYM, C_OI, C_VOL, C_THETA, C_VEGA, C_GAMMA, C_DELTA, C_IV = 0, 1, 2, 3, 4, 5, 6, 7
@@ -166,6 +169,14 @@ def assemble_series(symbol, rows, *, scraped_at, trading_date, series_meta, anch
     """
     chain = build_chain(rows, symbol)
     fut_last = (anchor or {}).get("last")
+    # Fill any IV/Greeks the scrape missed. TFEX gates its client-side Greeks on
+    # a real browser, so headless runs get prices but blank IV/Greeks; we
+    # reconstruct them with Black-76 from the option price + futures anchor + DTE
+    # (prefer TFEX's own values when present — fill_chain skips populated legs).
+    dte_days = None
+    if series_meta is not None:
+        dte_days = max((series_meta.last_trading_date - _date.fromisoformat(trading_date)).days, 1)
+        fill_chain(chain, fut_last, dte_days / 365.0)
     atm = atm_strike(chain, fut_last)
     iv = atm_iv(chain, atm)
     return {
@@ -175,6 +186,7 @@ def assemble_series(symbol, rows, *, scraped_at, trading_date, series_meta, anch
         "series_label": f"{series_meta.expiry_year}-{series_meta.expiry_month:02d} ({series_meta.quarter_code})"
         if series_meta else symbol,
         "quarter_code": series_meta.quarter_code if series_meta else symbol[3:4],
+        "dte": dte_days,
         "last_trading_date": series_meta.last_trading_date.isoformat() if series_meta else None,
         "future_last": fut_last,
         "future_chg": (anchor or {}).get("change"),
