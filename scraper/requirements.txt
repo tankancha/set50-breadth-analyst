@@ -1,0 +1,2 @@
+# Scraper runtime deps (Slice 2+). Slice 1's selector is pure stdlib.
+playwright==1.49.1
