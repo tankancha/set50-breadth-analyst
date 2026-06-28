@@ -1,0 +1,24 @@
+name: ci
+
+# Pure-stdlib unit tests for the roll selector and the breadth extraction.
+# No browser / no network — runs fast on every push that touches the scraper.
+on:
+  push:
+    paths: ["scraper/**", ".github/workflows/ci.yml"]
+  pull_request:
+    paths: ["scraper/**"]
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        working-directory: scraper
+        run: |
+          python test_series.py
+          python test_extract.py

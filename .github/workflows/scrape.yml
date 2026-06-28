@@ -1,0 +1,46 @@
+name: scrape
+
+# EOD SET50 options scrape. 0 16 UTC = 23:00 Asia/Bangkok, Mon–Fri.
+# See cron/set50-scrape.md in the vault project for the source-of-truth spec.
+on:
+  schedule:
+    - cron: "0 16 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright + Chromium
+        run: |
+          pip install -r scraper/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Scrape TFEX board
+        run: python scraper/run.py
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "set50-scraper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -n "$(git status --porcelain docs/data)" ]; then
+            git add docs/data
+            git commit -m "scrape: $(TZ=Asia/Bangkok date +%F)"
+            git pull --rebase origin main || true
+            git push origin main
+          else
+            echo "No data changes (holiday / stale board) — nothing to commit."
+          fi
