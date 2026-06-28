@@ -70,9 +70,25 @@ def scrape_board() -> dict:
     from playwright.sync_api import sync_playwright  # imported lazily
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        # Tall viewport so most rows are "visible" and their Greeks compute.
-        page = browser.new_page(viewport={"width": 1440, "height": 2400})
+        browser = p.chromium.launch(
+            headless=True, args=["--disable-blink-features=AutomationControlled"],
+        )
+        # Stealth context. TFEX gates its client-side IV/Greeks computation on
+        # automation signals: a real browser (navigator.webdriver === false) shows
+        # IV + Greeks, but a vanilla Playwright launch (webdriver === true) renders
+        # OI/vol/last and leaves IV/Greeks blank. Mask the signals + tall viewport.
+        context = browser.new_context(
+            viewport={"width": 1440, "height": 2400}, locale="th-TH",
+            user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"),
+        )
+        context.add_init_script(
+            "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+            "window.chrome=window.chrome||{runtime:{}};"
+            "Object.defineProperty(navigator,'languages',{get:()=>['th-TH','th','en-US','en']});"
+            "Object.defineProperty(navigator,'plugins',{get:()=>[1,2,3,4,5]});"
+        )
+        page = context.new_page()
         page.goto(BOARD_URL, wait_until="networkidle")
         # Expand every contract-month accordion.
         page.evaluate(
