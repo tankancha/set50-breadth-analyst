@@ -13,7 +13,7 @@
         "gamma_posture": "long",
         "zone": "Pinning",
         "iv_state": "compressed",
-        "skew": "call-side rich near ATM",
+        "skew": "put-rich at the 25Δ wings (calls firmer at ATM)",
         "label": "Dealer long-gamma pin into a 2-day expiry",
         "evidence": [
           "Net dealer gamma is positive around the 1010 ATM (call gamma·OI exceeds put), so hedging is mean-reverting — a stabilising pin.",

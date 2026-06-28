@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>SET50 Options Breadth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/style.css">
+<!-- Charts (no build step) -->
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+<!-- Mobile-only top bar -->
+<div class="topbar">
+  <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5h14M2 9h14M2 13.5h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Views</span>
+  </button>
+  <div class="topbar-title">SET50 Options Breadth</div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-name">SET50 Options Breadth</div>
+      <div class="brand-sub">TFEX EOD chain · OI · IV · regime</div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Views">
+      <div class="nav-group-label">Board</div>
+      <button class="nav-item" data-view="volume" type="button">
+        <svg class="ico" viewBox="0 0 18 18" fill="none"><path d="M3 14V8M7 14V4M11 14V10M15 14V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Volume
+      </button>
+      <button class="nav-item" data-view="oi" type="button">
+        <svg class="ico" viewBox="0 0 18 18" fill="none"><path d="M3 14V7M7 14V3M11 14V9M15 14V5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2 11c3-5 6-3 9-5s4-1 5-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="2 2"/></svg>
+        Open Interest
+      </button>
+      <button class="nav-item" data-view="oichg" type="button">
+        <svg class="ico" viewBox="0 0 18 18" fill="none"><path d="M9 2v14M5 6l4-4 4 4M5 12l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        OI Change
+      </button>
+      <div class="nav-group-label">Read</div>
+      <button class="nav-item" data-view="analytics" type="button">
+        <svg class="ico" viewBox="0 0 18 18" fill="none"><path d="M3 3h12v12H3zM6 8v4M9 6v6M12 10v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Analytics
+      </button>
+    </nav>
+    <div class="sidebar-foot">
+      <a href="https://github.com/tankancha/set50-breadth-analyst" target="_blank" rel="noopener">source on GitHub</a>
+      <div class="upd" id="foot-updated"></div>
+    </div>
+  </aside>
+
+  <!-- Scrim closes the mobile drawer -->
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main class="main">
+    <header class="head">
+      <div class="head-top">
+        <div class="head-titlewrap">
+          <div class="head-eyebrow" id="head-eyebrow">SET50 · TFEX index options</div>
+          <h1 class="head-title">SET50 Options Breadth</h1>
+        </div>
+        <div class="series-picker">
+          <label for="series-select">Series</label>
+          <select class="series-select num" id="series-select" aria-label="Select series"></select>
+        </div>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <section class="panel" id="panel">
+      <div class="empty-state"><h3>Loading…</h3><p>Fetching the option board.</p></div>
+    </section>
+  </main>
+</div>
+
+<script src="./assets/app.js"></script>
+</body>
+</html>
