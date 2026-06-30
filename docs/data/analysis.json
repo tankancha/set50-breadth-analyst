@@ -1,119 +1,69 @@
 {
-  "_sample": true,
-  "generated_at": "2026-06-27T23:20:00+07:00",
-  "primary": "S50M26",
+  "generated_at": "2026-06-30T23:34:56+07:00",
+  "primary": "S50U26",
   "by_series": {
-    "S50M26": {
-      "symbol": "S50M26",
-      "series_label": "Jun '26 (M)",
-      "trading_date": "2026-06-27",
-      "dte": 2,
-      "spot_anchor": 1012.5,
-      "regime": {
-        "gamma_posture": "long",
-        "zone": "Pinning",
-        "iv_state": "compressed",
-        "skew": "put-rich at the 25Δ wings (calls firmer at ATM)",
-        "label": "Dealer long-gamma pin into a 2-day expiry",
-        "evidence": [
-          "Net dealer gamma is positive around the 1010 ATM (call gamma·OI exceeds put), so hedging is mean-reverting — a stabilising pin.",
-          "Max pain 990 sits below spot 1012.5; the 970–1000 strikes carry the heaviest near-money OI on both sides.",
-          "ATM IV 15.9% is low and there are only 2 sessions to expiry, so realised range is structurally small."
-        ]
-      },
-      "breadth": {
-        "pc_oi_ratio": 1.94,
-        "pc_vol_ratio": 1.82,
-        "max_pain": 990,
-        "call_wall": 1080,
-        "near_call_wall": 970,
-        "put_wall": 780,
-        "near_put_wall": 970,
-        "gamma_flip": 1000,
-        "one_sigma_move": 10.1,
-        "iv_atm": 15.9,
-        "iv_skew_25d": 4.6
-      },
-      "today_summary": "S50M26 sits at 1012.5 into a 2-day expiry with dealers long gamma around the 1010 strike, a configuration that pins price and damps range. Put OI dominates (P/C OI 1.94) but most of it is the deep 780 structural floor (OI 15,973); near-money positioning clusters 970–1000. Max pain is 990, ~22 points below spot. ATM IV is compressed at 15.9%, implying a ~10-point 1σ daily move.",
-      "what_changed": [
-        "Heaviest near-money call OI build at 970 (2,397) and 1000 (2,220), capping upside drift.",
-        "Put support reinforced at 970 (3,349) above the static 780 wall.",
-        "ATM IV held in the mid-teens — no pre-expiry vol bid."
-      ],
-      "five_day_thesis": "This is a sample; the live skill writes the 5-day thesis from the history archive — max-pain drift, wall migration, GEX sign flips, and IV compression vs the prior week.",
-      "strategies": [
-        {
-          "name": "Iron condor 970P / 950P × 1030C / 1050C",
-          "dir_axis": "neutral",
-          "vol_axis": "short",
-          "rationale": "Long-gamma pin + compressed IV + 2 DTE favour a defined-risk short-vol structure that collects the pin decay between the near-money walls.",
-          "example_legs": ["+1 950 put", "-1 970 put", "-1 1030 call", "+1 1050 call"],
-          "defined_risk": "Max loss = wing width (20) − net credit, per side; both wings capped.",
-          "invalidation": "A close beyond the 970 put wall or the 1030 call strike breaks the pin thesis — exit."
-        },
-        {
-          "name": "990/970 put credit spread",
-          "dir_axis": "neutral-bullish",
-          "vol_axis": "short",
-          "rationale": "Spot above max pain with strong 970 put support; sells the downside toward the pin with capped risk.",
-          "example_legs": ["-1 990 put", "+1 970 put"],
-          "defined_risk": "Max loss = 20 − net credit.",
-          "invalidation": "Decisive break below 970 (the put wall)."
-        }
-      ],
-      "prediction": "Range-bound into expiry, gravitating toward the 990–1010 pin zone; bias neutral. Invalidation: a sustained move outside 970–1030 with rising volume signals the pin has broken.",
-      "risk_note": "Educational only — not trade advice. SET50 options are cash-settled on the index, so pinning is weaker here than for physically-settled single stocks; treat the pin as a tendency, not a guarantee."
-    },
     "S50U26": {
       "symbol": "S50U26",
       "series_label": "Sep '26 (U)",
-      "trading_date": "2026-06-27",
-      "dte": 94,
-      "spot_anchor": 1013.3,
+      "trading_date": "2026-06-30",
+      "dte": 91,
+      "spot_anchor": 1031.2,
       "regime": {
-        "gamma_posture": "neutral",
+        "gamma_posture": "short",
         "zone": "Protection",
         "iv_state": "normal",
-        "skew": "put-rich (downside protection bid)",
-        "label": "Early-cycle quarter building downside protection",
+        "skew": "put-rich (downside-protection bid, +2.75 pp 25Δ skew)",
+        "label": "Short-gamma Protection — spot +18 rally above max pain, IV compressing, put OI accumulating",
         "evidence": [
-          "94 days to expiry: OI is still accumulating, so structure is forming rather than pinning.",
-          "Put IV richer than call across the 1010–1040 band — the classic index downside-protection skew.",
-          "Open interest thin and spread along the strikes; no dominant near-money wall yet."
+          "1. Cumulative net dealer GEX is negative from 910 through 1070; gamma flip resolves at ~1080 — spot 1031 sits 49 pts below the flip, placing dealers squarely in short-gamma (trend-amplifying) territory.",
+          "2. PC OI ratio 1.22 and PC vol ratio 1.40 confirm put-heavy flow; session put OI surged +1,300 (4,875→6,175) vs call OI +544 (4,533→5,077) — new hedge demand layered above the rally.",
+          "3. IV ATM compressed 1.57 pp (17.35%→15.78%) on a +18-pt up session — vol sold into strength, not expanding into a fear-driven squeeze.",
+          "4. 91 DTE with no dominant near-money pin cluster: OI is still accumulating across the 1020–1080 range rather than consolidating for expiry-week pinning."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 0.78,
-        "pc_vol_ratio": 0.86,
-        "max_pain": 1000,
+        "pc_oi_ratio": 1.22,
+        "pc_vol_ratio": 1.40,
+        "max_pain": 1020.0,
         "call_wall": 1080,
         "near_call_wall": 1080,
         "put_wall": 910,
-        "near_put_wall": 1000,
-        "gamma_flip": 1010,
-        "one_sigma_move": 15.4,
-        "iv_atm": 15.1,
-        "iv_skew_25d": -2.1
+        "near_put_wall": 1030,
+        "gamma_flip": 1080,
+        "one_sigma_move": 10.25,
+        "iv_atm": 15.78,
+        "iv_skew_25d": 2.75
       },
-      "today_summary": "S50U26 (Sep, 94 DTE) is the newly-active back quarter: 1013.3 anchor, IV ~15%, and open interest still being built. The put-side skew shows the usual index protection bid, but no near-money wall has formed yet, so the series is in an accumulation/Protection phase rather than a pin.",
+      "today_summary": "S50U26 futures rallied +18 pts to 1031.2, shifting the ATM 20 pts from 1010 to 1030 and vaulting spot 11 pts above the max-pain anchor at 1020. Total OI expanded +1,844 contracts; put OI dominated (+1,300) with the 1030-strike put adding 354 lots to 606 at 468 vol — the busiest single strike in the session, flagging fresh institutional hedges rather than short-covering. ATM IV fell 1.57 pp to 15.78% despite the rally, compressing the 1σ daily move estimate to 10.25 pts. Dealers remain short-gamma below the 1080 gamma flip; a sustained break of 1060 (771 call OI, 230 vol today — Vol2Vol confirmed live) would amplify toward that level.",
       "what_changed": [
-        "U26 became actively tracked at this roll (16 June overlap window).",
-        "Early OI skewed to puts for downside protection; calls thinner."
+        "Spot: +18.0 pts (1013.3 → 1031.2); ATM shifted 20 pts from 1010 to 1030 — the largest move in the 2-session available history.",
+        "Max pain: drifted +10 pts (1010 → 1020), trailing spot by 11 pts — spot now above max pain.",
+        "IV ATM: compressed −1.57 pp (17.35% → 15.78%); 1030 put (252→606 OI, 468 vol) and 1030 call (376→440 OI, 248 vol) were the dominant flow strikes.",
+        "PC vol ratio: spiked to 1.40 from 0.57 — put flow decisively outpaced call flow even on a strong up day, consistent with Protection-zone hedge accumulation at elevated spot."
       ],
-      "five_day_thesis": "Sample placeholder — the live skill tracks how U26's walls and skew build out across the first sessions of the new front quarter.",
+      "five_day_thesis": "Only two sessions (Jun 27 and Jun 30) are available; the thesis is provisional and will sharpen as more history accumulates. The +18-pt rally paired with a −1.57 pp IV decline is a relief-rally signature — vol was sold, not bid. Max pain migrated +10 pts but trails spot by 11 pts, creating a gravitational pull back toward 1020 over the medium term if the rally fades. The 1030-strike put (252→606 OI, +354 in one session) has become the new primary put-burden node; any re-test of 1030 on volume activates fresh dealer delta-hedging at that level. Call OI has stacked at 1050–1080 (563/771/1110) across the two sessions, building a three-layer resistance corridor; notably, 1080 is both the global call wall and the gamma flip — a confirmed close above it shifts dealers from short to long gamma and changes move character. GEX sign has not flipped: spot has remained below 1080 and in short-gamma territory throughout, sustaining the trend-amplification bias on directional moves.",
       "strategies": [
         {
-          "name": "1000/970 put debit spread (protective lean)",
+          "name": "Put debit spread 1000/980 (downside insurance)",
           "dir_axis": "bearish-hedge",
           "vol_axis": "long",
-          "rationale": "With protection demand and 94 DTE, a defined-risk long-vol downside structure is cheap to carry as portfolio insurance.",
-          "example_legs": ["+1 1000 put", "-1 970 put"],
-          "defined_risk": "Max loss = net debit paid.",
-          "invalidation": "Thesis is a hedge, not a directional bet; size to the book."
+          "rationale": "Protection zone with +2.75 pp put-rich skew and short-gamma below 1080: any pullback from 1031 through max pain (1020) and below the 1000 put support (401 OI) would be amplified by dealer delta-hedging; the debit spread captures that tail at defined, limited cost using the positively-skewed put side.",
+          "example_legs": ["+1 1000 put", "-1 980 put"],
+          "defined_risk": "Max loss = net debit paid, approximately 5–6 pts (~1,000–1,200 baht/lot at 200 bt/pt). Max gain = 20 − debit if spot settles at or below 980 at expiry.",
+          "invalidation": "Spot holds above 1020 max pain on a daily close and the 1030 ATM put cluster (606 OI) remains well-bid, negating the pullback thesis."
+        },
+        {
+          "name": "Call debit spread 1060/1080 (short-gamma squeeze)",
+          "dir_axis": "bullish",
+          "vol_axis": "long",
+          "rationale": "Spot sits 49 pts below the gamma flip (1080); a sustained break of the active 1060 call wall (771 OI, 230 vol — Vol2Vol live: volume confirmed, OI built, price approaching) forces dealers to buy delta into the move — short-gamma acceleration toward 1080; the debit spread caps risk while capturing the squeeze leg.",
+          "example_legs": ["+1 1060 call", "-1 1080 call"],
+          "defined_risk": "Max loss = net debit paid, approximately 7–8 pts (~1,400–1,600 baht/lot at 200 bt/pt). Max gain = 20 − debit if spot settles at or above 1080 at expiry.",
+          "invalidation": "Spot fails to close above 1031 and reverses below 1020 (below max pain), negating the momentum/squeeze thesis."
         }
       ],
-      "prediction": "Directionally neutral this far out; watch where the first real OI walls anchor as the quarter matures.",
-      "risk_note": "Educational only — not trade advice. Long-dated Greeks shift quickly as new OI arrives; re-read weekly."
+      "prediction": "Bias is neutrally bullish near-term: the +18-pt session and IV compression suggest institutional positioning for higher prices, and the short-gamma environment below 1080 would amplify any continuation above 1060. However, the 11-pt gap between spot (1031) and max pain (1020) creates a gravitational mean-reversion pull; without follow-through volume, a drift toward 1020 is the path of least resistance. The thesis turns bearish on a daily close below 1020 with expanding put IV.",
+      "risk_note": "Educational analysis only — not trade advice. SET50 options are cash-settled against the SET50 index (not the futures), so the dealer-hedging mechanics that drive pinning in physically-settled single-stock options are structurally weaker here; max-pain levels should be treated as gravitational tendencies, not guaranteed targets. Short-vol defined-risk structures carry negative-skew payoff — frequent small gains, capped but real maximum loss; size small. Macro or news flow can override the option structure outright."
     }
   }
 }
