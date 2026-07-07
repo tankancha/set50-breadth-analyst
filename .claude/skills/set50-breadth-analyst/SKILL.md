@@ -154,13 +154,33 @@ Build the object **exactly** per `references/analysis-schema.md`:
 ```
 git add docs/data/analysis.json
 git commit -m "analysis: $(TZ=Asia/Bangkok date +%F)"
-git pull --rebase origin main || true
-git push origin main
 ```
 
-If the commit is a no-op (re-run, nothing changed), exit cleanly without retry. The push triggers GitHub Pages to redeploy (~30s).
+If the commit is a no-op (re-run, nothing changed), exit cleanly without retry.
 
-→ Return the dashboard URL and a one-line per-series regime summary.
+Some cloud environments force this skill to develop on a per-run feature branch (e.g. `claude/<slug>`) instead of committing to `main` directly — GitHub Pages only serves `main`, so a commit stranded on a feature branch never reaches the dashboard. Self-heal at push time instead of assuming you're already on `main`:
+
+```
+git fetch origin main
+BRANCH=$(git branch --show-current)
+
+if [ "$BRANCH" = "main" ]; then
+  git pull --rebase origin main || true
+  git push origin main
+else
+  git push -u origin "$BRANCH"
+  if git merge-base --is-ancestor origin/main HEAD; then
+    # main hasn't moved since this branch was cut — safe fast-forward, no merge commit needed.
+    git push origin HEAD:main
+  else
+    echo "main has diverged since this branch was cut — cannot fast-forward-merge analysis.json into main automatically. Report this in the run summary; a manual merge/PR is needed."
+  fi
+fi
+```
+
+The push (direct or fast-forwarded) triggers GitHub Pages to redeploy (~30s).
+
+→ Return the dashboard URL and a one-line per-series regime summary. If the fast-forward wasn't possible, say so explicitly instead of implying the dashboard is live.
 
 ---
 
