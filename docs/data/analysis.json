@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-07-13T23:41:05+07:00",
+  "generated_at": "2026-07-14T09:30:00+07:00",
   "primary": "S50U26",
   "by_series": {
     "S50U26": {
       "symbol": "S50U26",
       "series_label": "Sep '26 (U)",
-      "trading_date": "2026-07-11",
-      "dte": 80,
-      "spot_anchor": 1065.9,
+      "trading_date": "2026-07-14",
+      "dte": 77,
+      "spot_anchor": 1072.3,
       "regime": {
         "gamma_posture": "short",
         "zone": "Protection",
         "iv_state": "normal",
-        "skew": "put-rich (downside-protection bid)",
-        "label": "Short-gamma gap to the 1100 flip narrows to 34 points as the Protection build decelerates, 80 DTE",
+        "skew": "put-rich (downside-protection bid, +2.7 vol pts 25d)",
+        "label": "Short-gamma gap to the 1100 flip narrows to a fresh 27.7-point low as the Protection build re-accelerates, 77 DTE",
         "evidence": [
-          "Cumulative net GEX turns positive only above the 1100 gamma flip; spot at 1065.9 sits 34.1 points below it, the narrowest gap of the 5-day window (down from 44.9 on 07-10 and roughly 60 on 07-09), so dealers stay net short gamma even as the gap keeps closing.",
-          "The far 910 put strike added just 108 contracts (+2.4%) to 4,644 on 130 lots today, a much quieter build than 07-10's 937-contract (+26%) spike on 1,153 lots - the Protection flow continues but is decelerating.",
-          "P/C OI ratio hit a fresh 5-day high of 1.42 (from 1.32), even as call OI still outweighs put OI by 4,418 contracts in the immediate 1040-1110 band (down from 5,048 yesterday), a locally dampening tilt keeping price under the 1080 wall.",
-          "ATM IV eased to 14.47% (from 14.86%) and the 25-delta skew narrowed to 2.63 (from 2.9), both inside the week's 13.79-15.03% / 1.78-2.90 ranges - no compression or expansion trend at 80 DTE."
+          "Cumulative net GEX turns positive only above the 1100 gamma flip; spot at 1072.3 sits 27.7 points below it, the narrowest gap of the 5-day window (down from 34.1 on 07-11 and 44.9 on 07-10), even though the flip itself has held at the 1100-1110 boundary for two straight sessions.",
+          "The far 910 put strike added 1,067 contracts (+23%) to 5,711 on 1,074 lots today - the largest single-session OI build of the past week, reversing 07-11's quiet 108-contract (+2.4%) add and confirming the Protection flow is re-accelerating.",
+          "P/C OI ratio jumped to a fresh 5-day high of 1.49 (from 1.42), while today's P/C volume ratio spiked to 1.83 (from 1.02), both pointing to active put-side hedging rather than stale resting OI.",
+          "Call OI still outweighs put OI by 4,736 contracts in the immediate 1040-1110 band (up from 4,418 on 07-11), a locally dampening tilt anchored by the 1080 call wall (1,887 OI, +11% over 5 sessions) that has kept price capped under the wall even as the broader book stays short gamma below the 1100 flip."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 1.42,
-        "pc_vol_ratio": 1.02,
+        "pc_oi_ratio": 1.49,
+        "pc_vol_ratio": 1.83,
         "max_pain": 1050,
         "call_wall": 1080,
         "near_call_wall": 1080,
         "put_wall": 910,
-        "near_put_wall": 1040,
+        "near_put_wall": 1050,
         "gamma_flip": 1100,
-        "one_sigma_move": 9.72,
-        "iv_atm": 14.47,
-        "iv_skew_25d": 2.63
+        "one_sigma_move": 9.92,
+        "iv_atm": 14.69,
+        "iv_skew_25d": 2.73
       },
-      "today_summary": "SET50 Sep futures (S50U26) closed at 1065.9, +10.9 points (+1.03%), the second straight up session and now 34.1 points below the 1100 cumulative gamma flip - the narrowest gap of the 5-day window (from 44.9 on 07-10). The far 910 put strike added a modest 108 contracts (+2.4%) to 4,644 on 130 lots, far quieter than 07-10's 937-contract spike, yet the P/C OI ratio still pushed to a fresh 5-day high of 1.42. Call OI continues to outweigh put OI by 4,418 contracts in the immediate 1040-1110 band (down from 5,048 yesterday), keeping the tape locally dampened under the 1080 call wall. ATM IV eased to 14.47% (from 14.86%), still inside the week's 13.79-15.03% range.",
+      "today_summary": "S50U26 closed 1072.3, +6.6 points (+0.6%), a third straight up session, and now sits 27.7 points below the 1100 cumulative gamma flip - the narrowest gap of the 5-day window (from 34.1 on 07-11). The far 910 put strike added 1,067 contracts (+23%) to 5,711 on 1,074 lots, the largest single-day OI build of the week, pushing the P/C OI ratio to a fresh high of 1.49 and today's P/C volume ratio to 1.83. ATM IV held at 14.69%, implying a 9.92-point (0.9%) one-sigma daily move, still inside the week's 13.79-15.03% range. Call OI continues to outweigh put OI by 4,736 contracts in the 1040-1110 band, keeping price locally dampened under the persistent 1080 call wall (1,887 OI) even as the wider book stays net short gamma below 1100.",
       "what_changed": [
-        "910 put OI +108 contracts (+2.4%) to 4,644 on 130-lot volume, a much quieter build than 07-10's 937-contract (+26%) spike.",
-        "P/C OI ratio +0.10 to a fresh 5-day high of 1.42; P/C volume ratio eased to 1.02 from 1.18 as call volume picked up relative to puts.",
-        "Futures +10.9 points (+1.03%) to 1065.9, narrowing the gap to the 1100 gamma flip to 34.1 points from 44.9 the prior session.",
-        "Near-put support rolled to 1040 from 1050 the prior session; the 1080 call wall held for a third day (1,844 -> 1,878 OI, +34)."
+        "Future +6.6 points (+0.6%) to 1072.3, a third straight up session and +31.9 points (+3.1%) off the 1040.4 low set 07-09.",
+        "Put OI at the 910 strike +1,067 contracts (+23%) to 5,711 on 1,074-lot volume - the largest single-day build of the week, up from 07-11's quiet +108 (+2.4%).",
+        "Gap to the 1100 gamma flip narrowed to 27.7 points from 34.1 the prior session, the tightest of the 5-day window.",
+        "Near-put support rolled to 1050 from 1040 the prior session, +149 OI (+19%) to 930; the 1080 call wall held for a fourth day (1,878 -> 1,887 OI, +9)."
       ],
-      "five_day_thesis": "Max pain has held in the 1040-1050 band for all 5 sessions (1040 on 07-07/08/09/10, then 1050 today) despite futures swinging from 1057.7 (07-08) down to 1040.4 (07-09) and back up to 1065.9 today - a 25.5-point round trip on only 10 points of max-pain drift, confirming the anchor is structural rather than a live target at 80 DTE. The cumulative gamma flip has migrated up from 1080-1090 (07-07) through 1090-1100 (07-09/07-10) to 1100-1110 today, tracking the put build, while spot has stayed under it every session - the gap has narrowed from roughly 60 points on 07-09 to 34.1 points today, the tightest of the window. Total put OI is up 30.9% from 11,118 (07-07) to 14,557 today, with the 910 tail-put strike alone growing 44.2% (3,220 to 4,644), though today's +2.4% add is the smallest daily increment of the run after 07-10's 26% spike. ATM IV stayed range-bound (13.79-15.03%) all week with no directional trend, and the 25-delta skew oscillated 1.78-2.90 (2.63 today), so the put build reads as steady hedging demand, not a fear spike. The 1080 call wall has been the single most stable structural level all week (OI 1,700 -> 1,878, always the largest call strike) and is the level to watch for the first real test of the narrowing short-gamma gap.",
+      "five_day_thesis": "Max pain has held in the 1040-1050 band all 5 sessions (1040 on 07-07/08/09/10, then 1050 from 07-11 on), while futures swung from 1063.9 (07-07) down to a 1040.4 low (07-09) and back up 3.1% to 1072.3 today - a wide round trip against only 10 points of max-pain drift, confirming the anchor remains structural at 77 DTE. The cumulative gamma flip has held at the 1100-1110 boundary for two straight sessions while spot keeps closing on it through price appreciation rather than flip migration, narrowing the short-gamma gap from roughly 60 points on 07-09 to 44.9 (07-10), 34.1 (07-11) and 27.7 points today - the tightest of the window. Total put OI is up 45.9% from 11,118 (07-07) to 16,216 today, with the 910 tail-put strike alone growing 77.3% (3,220 to 5,711); today's 1,067-contract add is the largest single-session build of the run, reversing 07-11's lull. ATM IV stayed range-bound (13.79-15.03%) with no directional trend, so the put build reads as steady hedging demand, not a fear spike. The 1080 call wall remains the single most stable structural level all week (OI 1,700 -> 1,887, always the largest call strike) and is the level to watch as the short-gamma gap keeps compressing.",
       "strategies": [
         {
-          "name": "Put debit spread 1030P / 990P",
+          "name": "Put debit spread 1050P / 1000P",
           "dir_axis": "bearish-hedge",
           "vol_axis": "long",
-          "rationale": "Put OI grew 30.9% over 5 sessions (11,118 -> 14,557) with 80 DTE still on the clock - a classic Protection-zone insurance build, not a pin - and today's cumulative reading stays net short gamma 34.1 points under the 1100 flip, so a debit spread rides that same hedging flow at defined, capped cost.",
-          "example_legs": ["+1 1030 put", "-1 990 put"],
-          "defined_risk": "Max loss = net debit paid to enter (last-price debit approx 7.0 pts x 200 baht/pt = approx 1,400 baht per spread); no further margin exposure.",
+          "rationale": "Put OI grew 45.9% over 5 sessions (11,118 -> 16,216) with 77 DTE still on the clock - a Protection-zone insurance build, not a pin - and today's cumulative reading stays net short gamma 27.7 points under the 1100 flip, so a debit spread rides that same hedging flow at defined, capped cost.",
+          "example_legs": ["+1 1050 put", "-1 1000 put"],
+          "defined_risk": "Max loss = net debit paid to enter (last-price debit approx 9.8 pts x 200 baht/pt = approx 1,960 baht per spread); no further margin exposure.",
           "invalidation": "A daily close back above the 1080 call wall without a matching put-OI build would signal the protection thesis is fading, not the rally stalling."
         },
         {
           "name": "Call debit spread 1080C / 1110C",
           "dir_axis": "bullish",
           "vol_axis": "long",
-          "rationale": "The 1080 call wall (OI 1,878, +10.5% over 5 sessions, 264 lots today) is the nearest live resistance just 1.3% above spot; a confirmed break on rising volume would push spot through the 1100-1110 gamma-flip zone where dealers turn long gamma, so a debit spread captures that momentum at defined risk rather than fading it.",
+          "rationale": "The 1080 call wall (1,887 OI, +11% over 5 sessions, 105 lots today) is the nearest live resistance just 0.7% above spot; a confirmed break on rising volume would push spot through the 1100-1110 gamma-flip zone where dealers turn long gamma, so a debit spread captures that momentum at defined risk rather than fading it.",
           "example_legs": ["+1 1080 call", "-1 1110 call"],
-          "defined_risk": "Max loss = net debit paid to enter (last-price debit approx 13.4 pts x 200 baht/pt = approx 2,680 baht per spread); no further margin exposure.",
+          "defined_risk": "Max loss = net debit paid to enter (last-price debit approx 14.1 pts x 200 baht/pt = approx 2,820 baht per spread); no further margin exposure.",
           "invalidation": "A daily close back below 1050 (today's max pain) invalidates the breakout attempt and favors a fade back toward the pain anchor."
         }
       ],
-      "prediction": "Bias is neutral with a mild bullish tilt while spot narrows the gap to the 1100 cumulative gamma flip (34.1 points, down from 44.9 on 07-10) and holds above the 1050 max-pain anchor; the locally call-heavy 1040-1110 band (+4,418 OI tilt) has kept the tape range-bound under the 1080 call wall for a third straight day. A daily close above 1080 on rising call volume would test the 1100-1110 flip/25-delta-call band and could shift the book toward net long gamma; a reversal back below roughly 1040-1050, where the near-put wall and max pain now sit together, would risk resuming the short-gamma acceleration seen on 07-09. At 80 DTE, treat directional conviction as low.",
-      "risk_note": "Educational analysis only - not trade advice, and nothing here should be read as a signal to execute a position. SET50 index options are cash-settled on the index with no physical delivery, so any pull toward max pain (1050) or the 1100 gamma flip is a tendency, not a guarantee, and pinning mechanics here are structurally weaker than for physically-settled single stocks. This series is 80 days from expiry with OI still building, so directional conviction should stay low, and defined-risk structures still carry their full stated max loss."
+      "prediction": "Bias is neutral with a mild bullish tilt while spot closes the gap to the 1100 cumulative gamma flip (27.7 points, the tightest of the 5-day window) and holds above the 1050 max-pain anchor; the call-heavy 1040-1110 band (+4,736 OI tilt) has kept the tape capped under the 1080 call wall for a fourth straight day. A daily close above 1080 on rising call volume would test the 1100-1110 flip/25-delta-call band directly and could flip the book toward net long gamma; a reversal back below 1050, where the near-put wall and max pain now sit together, would risk resuming the wider short-gamma swings seen on 07-09. At 77 DTE, treat directional conviction as low.",
+      "risk_note": "Educational analysis only - not trade advice, and nothing here should be read as a signal to execute a position. SET50 index options are cash-settled on the index with no physical delivery, so any pull toward max pain (1050) or the 1100 gamma flip is a tendency, not a guarantee, and pinning mechanics here are structurally weaker than for physically-settled single stocks. This series is 77 days from expiry with OI still building, so directional conviction should stay low, and defined-risk structures still carry their full stated max loss."
     }
   }
 }
