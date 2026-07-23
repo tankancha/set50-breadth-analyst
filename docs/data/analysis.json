@@ -1,78 +1,69 @@
 {
-  "generated_at": "2026-07-22T01:15:00+07:00",
+  "generated_at": "2026-07-23T00:45:00+07:00",
   "primary": "S50U26",
   "by_series": {
     "S50U26": {
       "symbol": "S50U26",
       "series_label": "Sep '26 (U)",
-      "trading_date": "2026-07-21",
-      "dte": 70,
-      "spot_anchor": 1096.6,
+      "trading_date": "2026-07-22",
+      "dte": 69,
+      "spot_anchor": 1089.6,
       "regime": {
-        "gamma_posture": "neutral",
-        "zone": "Protection",
-        "iv_state": "compressed",
-        "skew": "modestly put-rich (25Δ skew +1.02 pts; 10Δ tail skew +3.79 pts) - insurance bid, not panic",
-        "label": "Neutral-gamma Protection build: put-hedge accumulation accelerates (P/C OI 1.97) as spot grinds through a failed 1080 call wall, with the gamma flip sitting almost exactly at today's 1096.6 anchor",
+        "gamma_posture": "short",
+        "zone": "Squeeze",
+        "iv_state": "normal",
+        "skew": "call-side rich near ATM (25Δ skew -0.71, flipped from +1.02 yesterday)",
+        "label": "Dealer short-gamma coil between the 1050 put wall and 1100 call wall, skew flipping call-rich",
         "evidence": [
-          "Cumulative net GEX crosses zero at strike 1100 (-404.6 at 1090 to +246.6 at 1100), essentially at today's 1096.6 spot - a genuinely transitional dealer posture, not a clean long- or short-gamma read.",
-          "Put OI (24,303) outweighs call OI (12,339) 1.97:1 and grew +15.5% in the last session alone (21,045→24,303) versus +3.9% for calls (11,881→12,339) - insurance accumulation, not directional betting.",
-          "The 1080 call wall (1,925 OI, the single largest strike) has been cleared by 16.6 points of spot rally and held that strike for 5 straight sessions without ever stopping the advance - resistance in name only right now.",
-          "ATM IV 13.72% sits near the bottom of its 5-session range (12.98%-14.40%), consistent with compressed-but-not-crushed premium for a 70-day series."
+          "Cumulative net GEX crosses zero near strike 1110, and spot at 1089.6 sits below that flip, putting dealers net short gamma at today's price.",
+          "The single largest short-gamma concentration sits at 1050 (net GEX approx -529 gamma-OI units), the same strike that absorbed a 14% one-day OI build (1,164 to 1,326).",
+          "The 1050 near put wall and 1100 near call wall bracket a 50-point box that has held for 5 straight sessions while max pain stayed fixed at 1060.",
+          "25-delta skew flipped from +1.02 (put-rich) to -0.71 (call-rich) today, the first call-rich reading of the week despite a -7.1 point future drop."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 1.97,
-        "pc_vol_ratio": 3.47,
+        "pc_oi_ratio": 1.90,
+        "pc_vol_ratio": 0.82,
         "max_pain": 1060,
         "call_wall": 1080,
         "near_call_wall": 1100,
         "put_wall": 910,
         "near_put_wall": 1050,
-        "gamma_flip": 1100,
-        "one_sigma_move": 9.48,
-        "iv_atm": 13.72,
-        "iv_skew_25d": 1.02
+        "gamma_flip": 1110,
+        "one_sigma_move": 9.15,
+        "iv_atm": 13.33,
+        "iv_skew_25d": -0.71
       },
-      "today_summary": "S50U26 future closed 1096.6 (+1.4 today, +2.5% over 5 sessions), 36.6 points above the 1060 max-pain anchor. Put OI leads call OI 1.97:1 (24,303 vs 12,339) after a +15.5% single-session jump in put positioning, while the 1080 call wall (1,925 OI) sits 16.6 points behind spot, already breached. ATM IV is 13.72% with a 9.48-point 1-sigma daily move; the cumulative gamma flip lands almost exactly at today's spot (1100 vs 1096.6), making the dealer posture a coin-flip between long- and short-gamma right here.",
+      "today_summary": "S50U26 future settled 1089.6, down 7.1 points (-0.65%) on 22 Jul, with 26 strikes live from 910 to 1150. Put OI outweighs calls 1.90:1 (24,653 vs 12,955), and max pain has held at 1060 for five straight sessions even as spot round-tripped from 1073 to 1096.6 and back. Cumulative dealer gamma turns positive only above strike 1110, so at today's 1089.6 the desk is net short gamma, with the deepest short-gamma concentration at 1050 (net GEX approx -529). The 25-delta skew flipped to -0.71 (call-rich) today from +1.02 yesterday, suggesting the put-hedging bid faded into the drop rather than intensifying.",
       "what_changed": [
-        "+3,258 put OI added in one session (21,045→24,303, +15.5%) alongside +36.5% put volume (3,280→4,479) - active downside-insurance buying, not stale positioning.",
-        "Spot future +7.9 points (1088.7→1096.6, +0.7%) while max pain held flat at 1060 - the spot-to-pain gap widened to +36.6 points.",
-        "ATM IV +0.74pt (12.98%→13.72%) and the 1-sigma move widened to 9.48 pts (from 8.9) - a modest re-pricing of near-term risk alongside the rally.",
-        "Put/call OI ratio rose to 1.97 from 1.77 - put-heavy skew intensifying even as price grinds higher, a hedging pattern rather than a bearish signal."
+        "Future fell 7.1 points to 1089.6, reversing three sessions of gains (1073 to 1096.6 from Jul 15-21).",
+        "25-delta skew flipped from +1.02 (put-rich) yesterday to -0.71 (call-rich) today, the first negative reading in the 5-day window.",
+        "Near put wall at 1050 jumped 14% to 1,326 contracts (from 1,164), the single largest one-day OI build of the week.",
+        "Near call wall held at 1100 (1,491 OI, +6% vs 1,409 yesterday) while the deep 1080 structural wall stayed flat (1,925 to 1,915)."
       ],
-      "five_day_thesis": "Over the past 5 sessions the S50U26 future rallied +26.6 points (1070.0→1096.6, +2.5%) while max pain drifted up only once (1050→1060 on day one) and then held flat for 4 straight sessions, widening the spot-to-pain gap from 20 to 36.6 points. Put OI grew +48.3% (16,386→24,303) versus call OI's +9.6% (11,257→12,339), pushing the put/call OI ratio from 1.46 to 1.97 - a steady, accelerating hedge build, not short covering. The 1080 call wall held its strike across all 5 sessions (OI cycling 1,841-2,010) even as spot cleared it entirely, and the cumulative gamma-flip point has migrated up with spot to sit almost exactly at today's 1096.6 anchor. ATM IV compressed from 14.40% to a 12.98% mid-week low before ticking back to 13.72% alongside today's put-volume surge (+36.5% day-over-day). With real, persistent futures gains on 4 of the last 5 sessions and IV/volume confirming rather than fading the move, the 1060 max-pain anchor should be read as a weak tendency, not a target, in this cash-settled, 70-DTE series.",
+      "five_day_thesis": "Max pain has been glued to 1060 across all five sessions from Jul 15 (spot 1073) through today (spot 1089.6), confirming it as a stable anchor rather than a moving target. Total put OI grew 41% over the week (17,505 to 24,653) versus call OI's 13% growth (11,481 to 12,955), pushing the P/C OI ratio from 1.52 to 1.90 and building a genuine near-money floor at 1050 (OI 1,069 to 1,326). The near call wall at 1100 grew in parallel (1,339 to 1,491), so the week's flow has reinforced a 1050-1100 box rather than resolved it. The one crack: today's skew flip from put-rich (+1.02 to +2.54 all week) to call-rich (-0.71) alongside the -7.1 point drop suggests this decline was not accompanied by fresh downside-hedging demand, arguing against a fear-driven move. ATM IV stayed range-bound 12.98%-13.77% all week with no expansion, so the options market is not yet pricing a breakout of the 1050-1100 box.",
       "strategies": [
         {
-          "name": "Put debit spread 1050P / 1000P",
-          "dir_axis": "bearish-hedge",
+          "name": "Long strangle 1050 put / 1130 call",
+          "dir_axis": "neutral",
           "vol_axis": "long",
-          "rationale": "The Protection-zone regime (P/C OI 1.97, put OI +48.3% over 5 sessions) argues for cheap defined-risk downside insurance rather than fading the rally outright.",
-          "example_legs": ["+1 1050 put", "-1 1000 put"],
-          "defined_risk": "Max loss = net debit paid = ~6.0 points (1050 put last 11.0 - 1000 put last 5.0), i.e., ~1,200 baht per spread at the 200-baht multiplier.",
-          "invalidation": "A sustained close above 1120 without a pullback would argue the put buying was defensive positioning against further upside, not a hedge that pays off soon - the spread would likely expire near worthless."
+          "rationale": "Dealer short gamma across the 1050-1100 box plus flat 13.3% IV means a breakout in either direction gets amplified rather than faded, so long premium captures that move cheaply while direction stays undecided.",
+          "example_legs": ["+1 1050 put", "+1 1130 call"],
+          "defined_risk": "Max loss = total premium paid: 1050P ask 12.0 + 1130C ask 9.8 = 21.8 points (4,360 baht per pair at the 200 baht/point multiplier).",
+          "invalidation": "Spot pins inside the 1050-1100 box into expiry without IV expansion; theta decay steadily erodes the position over a 69-day hold."
         },
         {
-          "name": "Call credit spread 1100C / 1120C",
-          "dir_axis": "neutral-bearish",
-          "vol_axis": "short",
-          "rationale": "Spot sits almost exactly at the cumulative gamma flip (1100) with call OI diffusing across 1090-1120 (1,182 / 1,409 / 568) rather than one dominant wall - a small, defined-risk fade of further near-term upside.",
-          "example_legs": ["-1 1100 call", "+1 1120 call"],
-          "defined_risk": "Max loss = wing width (20) - net credit (9.4, from 1100 call last 25.1 minus 1120 call last 15.7) = 10.6 points, i.e., ~2,120 baht per spread.",
-          "invalidation": "A daily close above 1110 (next OI cluster, 1,242 call OI) breaks the fade thesis - the wall isn't holding."
-        },
-        {
-          "name": "Call debit spread 1110C / 1140C",
-          "dir_axis": "bullish",
+          "name": "Put debit spread 1090P / 1050P",
+          "dir_axis": "bearish",
           "vol_axis": "long",
-          "rationale": "4 of the last 5 sessions closed higher (+26.6 points net) with put OI building defensively rather than distribution - a break through 1110-1120 with volume would validate continuation toward the 1140 strike.",
-          "example_legs": ["+1 1110 call", "-1 1140 call"],
-          "defined_risk": "Max loss = net debit paid = ~11.8 points (1110 call last 20.3 - 1140 call last 8.5), i.e., ~2,360 baht per spread.",
-          "invalidation": "A close back below 1080 (the former call wall, now support) invalidates the continuation thesis."
+          "rationale": "Today's -7.1 point drop plus dealer short gamma below the 1110 flip means further downside toward the 1060 max pain and 1050 wall gets amplified, not faded.",
+          "example_legs": ["+1 1090 put", "-1 1050 put"],
+          "defined_risk": "Max loss = net debit paid: 1090P ask 26.2 minus 1050P bid 11.6 = 14.6 points (2,920 baht at the 200 baht/point multiplier).",
+          "invalidation": "A close back above the 1100 near call wall reasserts the upper half of the range and negates the bearish continuation thesis."
         }
       ],
-      "prediction": "Given the diffuse call OI cluster at 1090-1120 (1,182 / 1,409 / 1,242) and dealers turning long-gamma just above spot, expect near-term chop or soft resistance in the 1100-1120 band rather than a clean breakout, with the 1060 max-pain anchor acting as only a weak downside magnet if momentum stalls. This bias fails if S50U26 closes above 1120 on rising volume - that would confirm the put-hedge buildup is defensive positioning against a breakout rather than a topping signal, opening room toward the 1140 call strike. A close back below 1080 (the former call wall, now support) would instead argue the rally is exhausted and put the 1060 max-pain level back in play.",
-      "risk_note": "Educational analysis only - not trade advice; nothing here is an instruction to open or close a position. SET50 options are cash-settled on the SET50 index with no physical delivery, so the max-pain/wall dynamics described here are a tendency, not a guarantee, and are structurally weaker than for share-settled single-stock options; 70 days to expiry further dilutes any pinning effect. Defined-risk structures still carry their full stated max loss - size accordingly."
+      "prediction": "Bias: mildly bearish-neutral within the 1050-1100 box - expect chop with a lean toward the 1060 max pain given today's -7.1 point drop and a fading put-hedging bid (skew -0.71). A close below the 1050 near put wall would confirm the short-gamma squeeze lower toward the deep 910 structural floor; a close back above 1100 reopens the path to the 1080 deep call wall and negates the bearish lean. Watch the 9.15-point 1-sigma range around 1089.6 (roughly 1080.5-1098.8) for the next session's directional tell.",
+      "risk_note": "Educational analysis only - not a trade recommendation. SET50 options are cash-settled on the SET50 index with no physical delivery, so the pinning/max-pain mechanics here are structurally weaker than for share-settled single-stock options; treat every wall and pin level as a tendency, not a guarantee, especially given today's skew flip and the 69-day-out expiry."
     }
   }
 }
