@@ -1,78 +1,89 @@
 {
-  "generated_at": "2026-09-10T23:40:18+07:00",
+  "generated_at": "2026-09-11T02:40:00+07:00",
   "primary": "S50U26",
   "by_series": {
     "S50U26": {
       "symbol": "S50U26",
       "series_label": "Sep '26 (U)",
-      "trading_date": "2026-09-10",
-      "dte": 19,
-      "spot_anchor": 1081.9,
+      "trading_date": "2026-09-11",
+      "dte": 18,
+      "spot_anchor": 1082.4,
       "regime": {
         "gamma_posture": "long",
         "zone": "Pinning",
         "iv_state": "compressed",
-        "skew": "mildly put-rich, but flattening (+0.78 vs +1.98 five sessions ago)",
-        "label": "Dealer long-gamma cage 1070-1100 at series-low IV, anchored on 1070 max pain",
+        "skew": "near-flat at +0.40, the thinnest protection bid of the series (+2.90 on 2026-09-02)",
+        "label": "Dealer long-gamma cage holds 1070-1100 at a series-low 12.21% IV, with the first put-side unwind print",
         "evidence": [
-          "Net GEX +10,779 index-point units is the highest of the whole U26 series and 54x the +199 printed on 2026-09-03; the ATM band 1070-1100 alone contributes +11,808, so dealers are long gamma exactly where price sits.",
-          "1090 gamma flip sits 8.1 points above spot 1081.9 - almost exactly one 1-sigma day (8.48) - and has migrated down 50 points from 1140 on 2026-09-03, tightening the cage rather than releasing it.",
-          "12.44% ATM IV is the lowest print in the series' 36-session history (14.09% on 2026-09-03), compressing the 1-sigma day to 8.48 points from 9.39.",
-          "2.29 P/C OI ratio is a series record on +2,577 put OI added in 5 sessions against -170 call OI, but with IV falling and 25-delta skew flattening to +0.78 this is systematic hedging, not a panic protection bid."
+          "Net GEX +11,138 index-point units is the second-highest print of the U26 series and 56x the +199 of 2026-09-03; strike-level GEX peaks at 1100/+4,700 and 1080/+3,572, so dealers are longest gamma exactly where price is trading.",
+          "Realised range is running at 38% of implied: the last four sessions closed 1079.4, 1083.3, 1081.9 and 1082.4 - a 3.9-point spread and a 3.18-point average daily move against an 8.33-point 1-sigma day. That gap is the long-gamma dampener working.",
+          "1090 gamma flip has been fixed for four straight sessions and sits 7.6 points above spot 1082.4, inside one 1-sigma day; cumulative GEX is still -345 at 1080 and +2,400 at 1090, so the cage lid is one ordinary session away.",
+          "12.21% ATM IV is a new series low (12.44% yesterday, 14.09% on 2026-09-03) and put OI fell 231 to 44,058 - the first and largest put-side decline in the eight-session window, an early unwind flag rather than a regime change."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 2.29,
-        "pc_vol_ratio": 1.5,
+        "pc_oi_ratio": 2.27,
+        "pc_vol_ratio": 0.97,
         "max_pain": 1070,
         "call_wall": 1100,
         "near_call_wall": 1100,
         "put_wall": 910,
         "near_put_wall": 1050,
         "gamma_flip": 1090,
-        "one_sigma_move": 8.48,
-        "iv_atm": 12.44,
-        "iv_skew_25d": 0.78
+        "one_sigma_move": 8.33,
+        "iv_atm": 12.21,
+        "iv_skew_25d": 0.4
       },
-      "today_summary": "1081.9 closed 1.6 points lower and 11.9 points (1.4 sigma) above 1070 max pain, which has now been parked at 1070 for four straight sessions. 2,763 call OI at 1100 on 344 lots of volume is the live near-money ceiling; 2,164 put OI at 1050 on 502 lots - today's heaviest single-strike print - is the live floor. The 16,321-contract 910 put wall is structural residue, not active: 10 lots traded, gamma is zero and its 30.8% IV is a stale quote, so it carries no hedging force. Strike-level net GEX flips sign at 1070 (+18) and turns firmly positive at 1080/+3,154 and 1100/+4,556, making 1070 the trapdoor rather than the support.",
+      "today_summary": "1082.4 closed 0.5 points higher and 12.4 points - 1.5 sigma - above the 1070 max pain that has now been parked for five straight sessions. 0.97 put/call volume is the first sub-parity print since 2026-09-04 and comes off a 46% collapse in put volume, 2,659 to 1,434, while 1,473 call lots held steady. The live near-money structure is 2,804 call OI at 1100 on 235 lots against 1,953 put OI at 1050 on 156 lots, with the heaviest volume at 1080/271 calls and 1060/387 puts - flow is concentrated inside the cage, not at its edges. The 16,321-contract 910 put wall again fails the Vol2Vol filter on 5 lots, zero gamma and a stale 35.5% IV, so it carries no hedging force.",
       "what_changed": [
-        "Gamma flip fell 50 points, 1140 on 2026-09-03 to 1090 today, while net GEX rose from +199 to +10,779 - dealers went from flat to decisively long gamma in five sessions.",
-        "ATM IV compressed 1.65 vol points, 14.09% to 12.44%, dragging the 1-sigma day from 9.39 to 8.48 points.",
-        "1050 put OI built +334 to 2,164 and 1000 put OI built +746, while 1030-1070 calls shed 450 contracts - the book rolled its protection down and let upside decay.",
-        "25-delta skew flattened from +1.98 to +0.78 even as put OI hit a record 44,289, confirming hedge accumulation without a volatility bid."
+        "Put volume halved, 2,659 to 1,434 lots, dragging the P/C volume ratio from 1.50 to 0.97 - the first session since 2026-09-04 where puts did not lead the tape.",
+        "Put OI fell 231 to 44,058, the first decline of the window, led by 1050 shedding 211 contracts while 1000 added 126 - protection rolled down and away from the near-money strike rather than being added.",
+        "ATM IV compressed another 0.23 points to a series-low 12.21%, cutting the 1-sigma day to 8.33 from 8.48 and from 9.39 on 2026-09-03.",
+        "25-delta skew flattened again to +0.40 from +0.78, extending a run from +2.90 on 2026-09-02; the downside-insurance bid has drained even as put OI stays 2.27x calls."
       ],
-      "five_day_thesis": "The 23.6-point rally from 1058.3 on 2026-09-03 to 1081.9 was absorbed, not chased: max pain drifted only 1060 to 1070 and the 1100 call wall never moved, so dealers financed the move by getting longer gamma the whole way up. That is the classic long-gamma dampener - every 8-point excursion is met with hedging in the opposite direction, which is why realised range has narrowed alongside the 1.65-point IV compression. The put book grew to a record 44,289 contracts but 25-delta skew flattened to +0.78, so the flow is calendar-driven collar and covered-call mechanics rather than fear; heavy put OI here is a burden map showing where hedges are parked, not a bearish vote. The active cage is 1070 to 1100: 1070 is where strike-level net GEX crosses zero and 13 sessions remain to the 2026-09-29 expiry, so a sustained break below flips dealers short gamma into a region with only 1,285-2,164 puts per strike to slow it. Against that, 1090 to 1100 needs to absorb 4,863 combined call OI on rising volume, and no session in the last five has closed above 1083.3.",
+      "five_day_thesis": "Five sessions ago, on 2026-09-04, the future was 1062.3 with net GEX at just +1,188 and the gamma flip 47.7 points overhead at 1110; the 20.1-point rally to 1082.4 since then has been absorbed rather than chased, with dealers getting 9.4x longer gamma on the way up and the flip migrating down to 1090. Max pain drifted only 1060 to 1070 against that 20.1-point move and the 1100 call wall never budged, adding 156 contracts to 2,804 - the structure let price come to it instead of moving with it. IV compressed 0.90 points over the same stretch, 13.11% to 12.21%, which is the signature of dealers being paid to fade excursions rather than of a market pricing a catalyst. Put OI still grew +1,989 to 44,058 over the five sessions, but 25-delta skew halved from +1.05 to +0.40 - this is calendar collar and covered-call mechanics parking hedges on the burden map, not a directional vote, and today's 231-contract put unwind is the first crack in that build. The cage is therefore 1070 to 1100 with 12 trading sessions left to the 2026-09-29 expiry: 1070 is where strike-level GEX changes sign and 1100 is where 2,804 contracts of call OI sit, and nothing in the last five sessions has closed outside it.",
       "strategies": [
         {
           "name": "Iron condor 1030P / 1050P x 1100C / 1120C",
           "dir_axis": "neutral",
           "vol_axis": "short",
-          "rationale": "Sells the two live walls - 2,164 put OI at 1050 and 2,763 call OI at 1100 - inside a +10,779 net-GEX cage where dealer hedging mechanically fades 8.48-point excursions.",
-          "example_legs": ["+1 1030 put", "-1 1050 put", "-1 1100 call", "+1 1120 call"],
-          "defined_risk": "Max loss = 20-point wing width minus roughly 5.95 points of net credit at mid = about 14.05 points per side.",
-          "invalidation": "A close beyond 1100 (call wall) or 1050 (near put wall); either breach puts price outside the strikes the cage is built on."
+          "rationale": "Sells both live near-money walls - 1,953 put OI at 1050 and 2,804 call OI at 1100 - outside a +11,138 net-GEX cage where realised movement has been running at 38% of the 8.33-point implied 1-sigma day. This is the long-gamma / Pinning / compressed-IV cell of the matrix: neutral direction, short volatility, defined risk.",
+          "example_legs": [
+            "+1 1030 put",
+            "-1 1050 put",
+            "-1 1100 call",
+            "+1 1120 call"
+          ],
+          "defined_risk": "Max loss = 20-point wing width minus about 5.50 points of net credit at mid = roughly 14.50 points per side; both sides cannot lose at once.",
+          "invalidation": "A daily close beyond 1100 or below 1050 - either breach puts price outside the strikes the cage is built on."
         },
         {
-          "name": "Bull call spread 1080 / 1100",
+          "name": "Put credit spread 1060 / 1040",
           "dir_axis": "neutral-bullish",
-          "vol_axis": "long",
-          "rationale": "Expresses the 1070-to-1100 drift the long-gamma cage has produced for five sessions, buying 12.67% IV at the series low and capping exactly at the 2,763-contract call wall where the drift has repeatedly stalled.",
-          "example_legs": ["+1 1080 call", "-1 1100 call"],
-          "defined_risk": "Max loss = about 8.5 points of net debit at mid; max value 20 points at or above 1100.",
-          "invalidation": "A close below 1070, the strike-level GEX sign flip and current max pain."
+          "vol_axis": "short",
+          "rationale": "Spot 1082.4 sits above the 1070 pin, which is the matrix row calling for a credit spread leaning toward the anchor: it sells the 25-delta strike at 1060 and buys the 10-delta at 1040, both below the 1070 GEX sign flip. The 2.55-point credit against 17.45 points of risk is itself the read - 12.21% IV pays very little for range, so this expresses the pin rather than harvesting premium.",
+          "example_legs": [
+            "-1 1060 put",
+            "+1 1040 put"
+          ],
+          "defined_risk": "Max loss = 20-point width minus about 2.55 points of net credit at mid = roughly 17.45 points.",
+          "invalidation": "A daily close below 1070, where strike-level net GEX turns negative and dealer hedging stops dampening the move."
         },
         {
-          "name": "Put debit spread 1060 / 1040",
+          "name": "Put debit spread 1070 / 1050",
           "dir_axis": "bearish-hedge",
           "vol_axis": "long",
-          "rationale": "Buys the 25-delta/10-delta band (1060/1040) at a flattened +0.78 skew and 12.44% ATM IV, covering the one path the cage does not dampen: below 1070 net GEX turns negative and dealer hedging starts amplifying the move.",
-          "example_legs": ["+1 1060 put", "-1 1040 put"],
-          "defined_risk": "Max loss = about 2.5 points of net debit at mid; max value 20 points at or below 1040.",
-          "invalidation": "A close back above 1090, the gamma flip, which restores the long-gamma dampener and removes the amplification the structure is built for."
+          "rationale": "The tail the two short-vol structures above do not cover: below 1070 cumulative GEX is negative all the way down and the next live put OI is only 1,323 at 1040, so dealer hedging flips from fading the move to feeding it. At 11.83% IV on the 1070 put - a series low - this buys that convexity for 3.7 points, and today's 231-contract put unwind is the first evidence the hedging bid holding the cage together can thin out.",
+          "example_legs": [
+            "+1 1070 put",
+            "-1 1050 put"
+          ],
+          "defined_risk": "Max loss = about 3.70 points of net debit at mid; max value 20 points at or below 1050.",
+          "invalidation": "A daily close back above 1090, the gamma flip, which restores the long-gamma dampener the structure is designed to trade against."
         }
       ],
-      "prediction": "Base case is a 1070-1100 range while dealers hold +10,779 net GEX, with 1081.9 mean-reverting toward the 1070 anchor on any 8.48-point excursion and upside progress capped near the 2,763-contract 1100 wall. The bias turns from range to trend on a daily close below 1070, where strike-level GEX goes negative and the next meaningful put OI is 1,285 at 1040. Conversely a close above 1090 with call OI above 1100 being bought rather than sold would mark the cage failing upward.",
-      "risk_note": "Educational analysis only - not trade advice, and no execution is being recommended. SET50 options are European and cash-settled on the SET50 index, so there is no physical delivery to force stock-side hedging into strikes; pinning toward 1070 max pain is a statistical tendency and is structurally weaker here than for physically-settled single stocks. Defined-risk does not mean low-risk: the short-vol condor above carries a real 14.05-point max loss per side and negative skew - many small gains, occasional large ones. The 16,321-contract 910 put wall fails the Vol2Vol filter (10 lots, zero gamma, 30.8% stale IV) and should not be read as support. All figures derive from the 2026-09-10T02:08+07:00 scrape of a 25-row chain; 13 trading sessions remain to the 2026-09-29 last trading date."
+      "prediction": "Base case is continued 1070-1100 containment while net GEX holds above +10,000, with 1082.4 leaning back toward the 1070 anchor on any excursion larger than the 8.33-point 1-sigma day and upside capped near the 2,804-contract 1100 wall; the 3.18-point average daily move of the last four sessions is the realistic range, not the implied one. That bias breaks on a daily close below 1070, where strike-level GEX goes negative into strikes carrying only 1,323-1,390 puts, or on a close above 1090 that holds with 1100 call OI being bought rather than sold - the first would be a squeeze lower, the second the cage failing upward. The signal to watch for the second consecutive session is the put side: a further decline in the 44,058 put OI alongside sub-1.0 put/call volume would shift this from Pinning toward Unwind and remove the mechanical support under the range.",
+      "risk_note": "Educational analysis only - not trade advice, and no execution is being recommended. SET50 options are European and cash-settled on the SET50 index, so there is no physical share delivery to force stock-side hedging into strikes; the 1070 max-pain magnet is a statistical tendency and is structurally weaker here than for physically-settled single stocks, and macro or news flow can override the option structure outright. Defined-risk is not low-risk: the condor above carries a real 14.50-point max loss per side and the 1060/1040 credit spread risks 17.45 points to collect 2.55, a negative-skew payoff of many small gains and occasional large ones - survival comes from size, not from being right. The 16,321-contract 910 put wall fails the Vol2Vol filter (5 lots, zero gamma, stale 35.5% IV) and must not be read as support. All figures derive from the 2026-09-11T02:00:09+07:00 scrape of a 25-row chain; 12 trading sessions remain to the 2026-09-29 last trading date."
     }
   }
 }
