@@ -1,89 +1,89 @@
 {
-  "generated_at": "2026-10-15T23:45:00+07:00",
+  "generated_at": "2026-10-16T23:50:00+07:00",
   "primary": "S50Z26",
   "by_series": {
     "S50Z26": {
       "symbol": "S50Z26",
       "series_label": "Dec '26 (Z)",
-      "trading_date": "2026-10-15",
-      "dte": 75,
-      "spot_anchor": 1054.9,
+      "trading_date": "2026-10-16",
+      "dte": 74,
+      "spot_anchor": 1053.4,
       "regime": {
         "gamma_posture": "long",
         "zone": "Protection",
         "iv_state": "compressed",
-        "skew": "call-rich at 25d (-2.06): 11.29% on the 1,010 put against 13.35% on the 1,080 call",
-        "label": "+302.7 total net GEX is the first positive reading in 11 sessions and the cumulative curve finally crosses zero at 1,150, but with 75 days left, +749 contracts of OI added today and a -4,746.4 trough still parked at 1,040, this is an insurance book thickening above spot, not a pin",
+        "skew": "call-rich at 25d (-0.93): 11.69% on the 1,010 put against 12.62% on the 1,080 call, with the 960 put wing still at 15.24%",
+        "label": "+744.9 total net GEX and +1,552.2 within 20 points of the money are both the window's highest reads and the flip has walked down 1,150 to 1,120, but with 74 days left, +2,383 contracts of OI added in five sessions and a -4,661.6 cumulative trough still parked at 1,040, this is an insurance book thickening above spot over a short-gamma pocket, not a pin",
         "evidence": [
-          "+1,150.0 of net dealer GEX now sits within 20 points of the money (1,040-1,070), up from +985.4 on 10-13 and +336.0 five sessions ago on 10-08. The per-strike hinge is 1,050 (+626.4) against 1,040 (-225.8), so spot at 1,054.9 stands 4.9 points inside the stabilising side of the chain.",
-          "+302.7 is total net GEX across 960-1,150, the first positive total since 2026-09-29 (+374.5) and a +916.0 swing from -613.3 yesterday. The cumulative sum crosses zero at 1,150 - the first gamma flip present in the chain since 09-29 - but that is 95.1 points above spot, so the whole traded corridor still sits beneath the structural flip while dampening locally at 1,050-1,100.",
-          "+749 contracts of open interest were added in one session (17,534 to 18,283) and +2,000 in five (+12.3%), call OI +408 against put OI +341. +355 of the call build landed at 1,060-1,090 on 615 of the day's 875 call contracts with the 1,080 call bid +0.30 vol - volume, OI and IV all confirming live upside flow by the Vol2Vol test.",
-          "11.61% ATM IV prices a 7.71-point 1-sigma day (0.73%) and has drifted +0.22 points higher over five sessions (11.39% on 10-08), so nothing is compressing further. The 1,847-contract 960 put wall grew +56 on 93 contracts of volume but sits 94.9 points (9.0%) below spot - structural insurance, not an active level."
+          "+1,552.2 of net dealer GEX now sits within 20 points of the money (1,040-1,070), up from +1,150.0 yesterday and +336.3 on 10-08 - the highest read in the six-session window. The per-strike hinge is 1,050 (+868.3, from +626.4) against 1,040 (-74.9), so spot at 1,053.4 stands 3.4 points inside the stabilising side of the chain and 3.4 points above a max pain that has not left 1,050 in six sessions.",
+          "+744.9 is total net GEX across 960-1,150, a +442.2 swing from +302.7 yesterday and the second positive print in the window. The cumulative curve crosses zero at 1,120 - the flip has walked down 30 points from 1,150 - but the entire traded corridor from 960 to 1,110 still sits beneath it, cumulative -3,793.3 at spot with a -4,661.6 trough at 1,040 and -4,095.5 at 1,020.",
+          "-935.7 at 1,020 and -1,026.1 at 1,000 are the two deepest short-gamma strikes on the board, and protection is rolling straight into them: 1,050 shed 74 puts and 1,040 shed 37 while 1,020 added +55 on 148 contracts - the day's heaviest put volume - moving the near put wall 1,040 to 1,020. Volume, OI build and price proximity all confirm 1,020 is live by the Vol2Vol test.",
+          "11.52% ATM IV prices a 7.64-point 1-sigma day (0.73%) and has held an 11.27-11.61% band for six sessions, so nothing is compressing further. The 1,846-contract 960 put wall traded just 43 lots and sits 93.4 points (8.9%) below spot - structural insurance that fails the Vol2Vol test, not an active level."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 1.0,
-        "pc_vol_ratio": 1.07,
+        "pc_oi_ratio": 0.98,
+        "pc_vol_ratio": 0.62,
         "max_pain": 1050,
         "call_wall": 1100,
         "near_call_wall": 1100,
         "put_wall": 960,
-        "near_put_wall": 1040,
-        "gamma_flip": 1150,
-        "one_sigma_move": 7.71,
-        "iv_atm": 11.61,
-        "iv_skew_25d": -2.06
+        "near_put_wall": 1020,
+        "gamma_flip": 1120,
+        "one_sigma_move": 7.64,
+        "iv_atm": 11.52,
+        "iv_skew_25d": -0.93
       },
-      "today_summary": "1,054.9 closes +4.5 points higher and 4.9 points above its own 1,050 max-pain strike, the seventh straight session inside a 1,045.3-1,054.9 band and the seventh with max pain frozen at 1,050. 875 call contracts traded against 938 puts for a 1.07 P/C volume ratio, but the distribution matters more than the ratio: 615 of the call contracts hit 1,060-1,090 and lifted call OI there +355, while 685 of the put contracts clustered at 1,000-1,050 at or below spot. 1.0023 P/C OI on 18,283 total contracts says standing positioning is dead balanced, with the long-gamma shelf at 1,050-1,100 now worth +3,055.4 of GEX against a -4,746.4 cumulative trough at 1,040. 11.61% ATM IV and a 7.71-point 1-sigma day keep the implied corridor at 1,047.2-1,062.6 for tomorrow, inside the 25-delta band of 1,010-1,080.",
+      "today_summary": "1,053.4 on the December future is 3.4 points above a 1,050 max pain that has now held for six consecutive sessions, with 1,182 call and 579 put contracts parked at that strike - the heaviest near-money concentration on the board. Call flow led puts 1,115 to 690 (P/C volume 0.62 from 1.07) and call OI built +308 against +75 on the put side, pulling P/C OI to 0.98 from 1.00. Net dealer GEX within 20 points of the money rose to +1,552.2 from +1,150.0 and the flip walked down to 1,120 from 1,150, yet cumulative net GEX is still -3,793.3 at spot. The 1,020 put shelf absorbed 148 contracts and +55 OI while 1,040 and 1,050 shed 111 puts between them, so the active support sits one strike lower than yesterday.",
       "what_changed": [
-        "Total net GEX flipped sign +916.0 to +302.7, the first positive total in 11 sessions, as the 1,060 strike added +84 call OI (+458.2 GEX) and 1,080 added +158 (+844.9). A gamma flip reappeared in the chain at 1,150 for the first time since 09-29.",
-        "Call OI rose +408 against +341 puts, reversing yesterday's put-led build (+59 calls against +183 puts); +355 of it at 1,060-1,090 on 615 contracts of volume, with call volume itself +420 (455 to 875).",
-        "The near-money put wall migrated 1,000 to 1,040 (823 OI) as spot at 1,054.9 pushed the 1,033-contract 1,000 strike 54.9 points away, outside the +/-5% band - a band shift, not an unwind; 1,000 put OI still grew +54 on 135 contracts.",
-        "25-delta skew widened -1.28 to -2.06, but the 25-delta put band stepped 1,000 to 1,010 (IV 12.45% to 11.29%); on fixed strikes the 1,000 put against the 1,080 call moved only -0.78 to -0.90."
+        "Total net GEX rose +442.2 to +744.9 and the gamma flip walked down 30 points to 1,120 from 1,150 - the second positive total print in the window.",
+        "Put OI rolled down one shelf: 1,050 -74 and 1,040 -37 against 1,020 +55 on 148 contracts, moving the near put wall to 1,020 from 1,040.",
+        "Call flow flipped to 1,115 contracts against 690 puts (P/C volume 0.62 from 1.07), with call OI building +94 at 1,050, +70 at 1,040 and +56 at the 1,100 wall.",
+        "ATM IV eased -0.09 to 11.52% and the 1-sigma day shrank to 7.64 points from 7.71, holding the six-session 11.27-11.61% band."
       ],
-      "five_day_thesis": "The window's defining move is the long-gamma shelf above spot thickening +40.7% in five sessions: 1,050/1,060/1,080/1,100 carried +2,171.0 of GEX on 10-08 and carry +3,055.4 now, which dragged the chain total from -326.6 to +302.7 and restored a gamma flip at 1,150. Max pain has not moved since 10-06 (1,050 for seven sessions, 1,060 before that) and spot has closed in a 9.6-point band of 1,045.3-1,054.9 across the whole stretch, which is the shelf doing its work rather than expiry mechanics - there are still 75 days left. Both walls are frozen for all 21 sessions on file: 1,100 calls (1,345 OI, +56 in five sessions) and 960 puts (1,847 OI, +155). What has not improved is the asymmetry below: the cumulative trough has sat at the 1,040 strike for 10 straight sessions and only shallowed +178.3 to -4,746.4, so dealers still dampen at 1,050-1,100 and chase under 1,040. IV refuses to compress - 11.39% to 11.61% over the five sessions, +0.22 points - so the premium case rests on the frozen 1,050 anchor and a 7.71-point 1-sigma, not on a vol collapse.",
+      "five_day_thesis": "1,050 has been max pain for six straight sessions (10-08 to 10-16) while the future covered a 9.6-point range (1,045.3 to 1,054.9) and finished 0.8 points below where it started - realised movement is running well inside the 7.64-point 1-sigma day the surface prices. Net dealer gamma within 20 points of the money rebuilt 4.6x from +336.3 on 10-08 to +1,552.2 today, flipping total net GEX from -1,483.4 on 10-09 and -613.3 on 10-13 to +302.7 and now +744.9, and putting a flip back on the board for the first time since 09-29 at 1,150, now 1,120. Open interest added +2,383 contracts (+14.6%) across the window, but call OI grew +1,508 (+19.0%) against put OI +875 (+10.5%), dragging P/C OI from 1.053 to 0.978 - the first sub-parity positioning in the window. The 1,100 call wall has held 1,401 contracts and the 960 put wall 1,846 through all six sessions, so neither structural level is being defended near money; the live protection is being rolled down to 1,020 instead. The structure, not realised volatility, is setting the range - ATM IV has moved just +0.13 points in six sessions while the -4,661.6 cumulative trough at 1,040 has stayed anchored directly beneath spot.",
       "strategies": [
         {
-          "name": "Iron condor 1010P / 990P x 1100C / 1120C",
-          "dir_axis": "neutral",
-          "vol_axis": "short",
-          "rationale": "Sells the two boundaries the chain actually defends - the 1,010 25-delta put (439 OI) and the 1,345-contract 1,100 call wall where dealers hold +1,125.9 of long gamma - against a +1,150.0 near-money gamma shelf, a 1,050 pain strike frozen for eight sessions and a 9.6-point realised range.",
-          "example_legs": [
-            "+1 990 put",
-            "-1 1010 put",
-            "-1 1100 call",
-            "+1 1120 call"
-          ],
-          "defined_risk": "Max loss = 20-point wing width minus net credit, per side (20 points = 4,000 baht at 200 baht per point). Only one wing can finish in the money.",
-          "invalidation": "A daily close below 1,040, where cumulative net GEX bottoms at -4,746.4 and dealer hedging switches from fading to chasing, or above the 1,100 call wall."
-        },
-        {
-          "name": "Put credit spread 1010 / 990",
-          "dir_axis": "neutral-bullish",
-          "vol_axis": "short",
-          "rationale": "The same pin thesis as the condor with the call wing dropped, because 615 of today's 875 call contracts and +355 of call OI landed at 1,060-1,090 with the 1,080 call bid +0.30 vol - live upside flow by the Vol2Vol test is the wrong thing to be short of, while 1,010 sits 44.9 points below a spot that has not closed under 1,045.3 in seven sessions.",
-          "example_legs": [
-            "-1 1010 put",
-            "+1 990 put"
-          ],
-          "defined_risk": "Max loss = 20-point width minus net credit = 4,000 baht minus credit received.",
-          "invalidation": "A daily close below 1,040 (the -4,746.4 GEX trough), which puts the short 1,010 strike inside one 7.71-point sigma of being tested."
-        },
-        {
-          "name": "Put debit spread 1040 / 1010",
+          "name": "Put debit spread 1020 / 980",
           "dir_axis": "bearish-hedge",
           "vol_axis": "long",
-          "rationale": "Buys the amplification shelf directly: every strike from 1,040 down to 960 carries negative net GEX, the 1,040 put is the cheapest vol in the band at 9.57% (against 11.29% at 1,010 and 14.89% at 960), and 122 contracts traded there today - defined-risk insurance against the one structure that would chase a break lower.",
+          "rationale": "-935.7 at 1,020 and -1,026.1 at 1,000 are the board's deepest short-gamma strikes, so a break of the 1,020 shelf - the strike that took 148 contracts and +55 OI today as 1,040/1,050 shed 111 puts - drops into dealer hedging that amplifies the move instead of fading it, and the 1,020 put's 10.93% IV is the cheapest point on the surface against 11.52% ATM and 15.24% on the 960 wing.",
           "example_legs": [
-            "+1 1040 put",
-            "-1 1010 put"
+            "+1 1020 put",
+            "-1 980 put"
           ],
-          "defined_risk": "Max loss = the net debit paid; maximum value 30 points (6,000 baht) if settlement is at or below 1,010.",
-          "invalidation": "A close above 1,060, where the +458.2 of GEX at that strike plus the 1,100 wall keep dealers fading rallies and the hedge decays against 75 days of theta."
+          "defined_risk": "Max loss = the 5.40-point net debit (10.35 paid on the 1,020 put against 4.95 collected on the 980), capped. 40-point width leaves 34.60 points of maximum payoff; breakeven 1,014.60.",
+          "invalidation": "A close back above 1,060, where per-strike net GEX turns +480.2 and the long-gamma pocket re-engages."
+        },
+        {
+          "name": "Iron condor 1010P / 980P x 1100C / 1130C",
+          "dir_axis": "neutral",
+          "vol_axis": "short",
+          "rationale": "1,050 has been max pain for six consecutive sessions with the future inside a 9.6-point range and +1,552.2 of net dealer GEX now dampening within 20 points of the money, so the 1,010 (-0.24 delta) and 1,100 (+0.17 delta) short strikes sit outside both live walls - but this sells 11.52% IV at the low end of a six-session 11.27-11.61% band with 74 days of vega to carry, so short-vol here is a size-small, negative-skew structure where the wings are the point.",
+          "example_legs": [
+            "+1 980 put",
+            "-1 1010 put",
+            "-1 1100 call",
+            "+1 1130 call"
+          ],
+          "defined_risk": "Max loss = 30-point wing width - 7.40-point net credit = 22.60 points on whichever side breaks. Breakevens 1,002.60 and 1,107.40.",
+          "invalidation": "A close beyond 1,010 or 1,100, or max pain drifting off 1,050 for the first time in six sessions."
+        },
+        {
+          "name": "Call debit spread 1060 / 1100",
+          "dir_axis": "neutral-bullish",
+          "vol_axis": "long",
+          "rationale": "1,115 call contracts against 690 puts (P/C volume 0.62) and call OI +1,508 (+19.0%) over five sessions against +875 on the put side is live upside accumulation on the Vol2Vol test, with +56 of today's build landing on the 1,401-contract 1,100 call wall - so the wall is where the upside gets sold, not bought through.",
+          "example_legs": [
+            "+1 1060 call",
+            "-1 1100 call"
+          ],
+          "defined_risk": "Max loss = the 12.50-point net debit (18.40 paid on the 1,060 call against 5.90 collected on the 1,100), capped. 40-point width leaves 27.50 points of maximum payoff; breakeven 1,072.50.",
+          "invalidation": "A close below 1,020, which breaks the live put shelf into the -4,095.5 cumulative short-gamma pocket."
         }
       ],
-      "prediction": "11.61% ATM IV and +1,150.0 of near-money dealer gamma argue for another session inside 1,047.2-1,062.6, with the 1,050 pain strike and the +626.4 of GEX on it the centre of gravity for an eighth session. The directional tilt is marginally higher - +355 of fresh call OI at 1,060-1,090 against a 1.0023 P/C OI that has stopped rising - so the balance of flow favours the 1,060-1,080 band over a retest of 1,045. A daily close below 1,040 invalidates all of it: that is where cumulative net GEX bottoms at -4,746.4 and dealer hedging turns from fading moves to chasing them, with 980-1,000 (1,729 combined put OI) the next shelf.",
-      "risk_note": "Educational analysis only - not trade advice, and no instruction to execute anything. SET50 options are cash-settled on the SET50 index with no physical delivery, so the dealer-hedging mechanics behind pinning are structurally weaker than for share-settled single stocks: treat the 1,050 max-pain anchor as a tendency, not a guarantee, especially with 75 days to the 2026-12-29 last trading date. Defined risk is not risk-free - the capped loss on every structure above is real and does occur. Open interest is a burden map, not a directional signal: it does not reveal who is long or short, hedge or speculation, and a macro or liquidity shock can overrun the option structure outright."
+      "prediction": "1,020 to 1,100 contains the structure with 1,050 as the magnet: six sessions of unmoved max pain, +1,552.2 of dampening gamma within 20 points of spot and a 7.64-point 1-sigma day argue for continued containment rather than trend. The asymmetry is to the downside - cumulative net GEX is -4,095.5 at 1,020 and -2,659.3 at 1,000 against a 1,120 flip sitting 66.6 points above spot, so a break of 1,020 accelerates while a break of 1,100 runs into 1,401 contracts of call OI. A close below 1,020 on put volume above today's 148 contracts with ATM IV expanding through 12% invalidates the containment read and would confirm the max-pain failure pattern rather than a fade back to 1,050.",
+      "risk_note": "Educational analysis only - not trade advice, and nothing here is a recommendation to execute any trade. SET50 options are cash-settled on the SET50 index with no physical share delivery, so the dealer-hedging mechanics behind pinning are structurally weaker here than for single stocks that settle in shares: treat the 1,050 max-pain anchor as a tendency, not a guarantee. Defined-risk is not risk-free - the 5.40, 22.60 and 12.50-point maximum losses above are real and can be realised in full, and short-vol payoffs are negative-skew (small frequent gains, rare large losses). With 74 days to the 2026-12-29 last trading date, macro and news flow can override the option structure outright, and the 960 put wall's 1,846 contracts traded only 43 lots today, making it structural insurance rather than active support."
     }
   }
 }
