@@ -1,87 +1,75 @@
 {
-  "generated_at": "2026-11-05T23:35:38+07:00",
+  "generated_at": "2026-11-06T23:36:12+07:00",
   "primary": "S50Z26",
   "by_series": {
     "S50Z26": {
       "symbol": "S50Z26",
       "series_label": "Dec '26 (Z)",
-      "trading_date": "2026-11-05",
-      "dte": 54,
-      "spot_anchor": 1018.2,
+      "trading_date": "2026-11-06",
+      "dte": 53,
+      "spot_anchor": 1018.1,
       "regime": {
         "gamma_posture": "short",
-        "zone": "Squeeze",
+        "zone": "Unwind",
         "iv_state": "normal",
-        "skew": "25d balanced (-0.18, repaired from -1.23), 10d tail now put-bid (+0.45: 960P 14.48 vs 1080C 14.03)",
-        "label": "Dealer short-gamma field repairs +2,105 on the first flat day in six, but spot 1018.2 still sits 11.8 pts under a 1030 flip that keeps migrating down",
+        "skew": "call-side rich near ATM (-0.97), near-money put bid paid down",
+        "label": "Dealer short gamma across the whole 960-1150 grid, with the downside-protection burden unwinding into a 3-session stall at 1018",
         "evidence": [
-          "-5,788 baht/pt total net GEX (gamma x OI x 200) across the entire 960-1150 ladder with no cumulative zero-crossing: -11,619 accumulates from 960 to 1020 and only +5,831 from 1030 up, so dealers stay structurally short gamma and hedge with the move rather than against it. 1030 is a per-strike sign change, not a true cumulative flip.",
-          "1030 gamma flip has walked down 1050 -> 1040 -> 1030 over 5 sessions while spot fell 47.8 pts (1066.0 -> 1018.2, -4.5%); the flip is chasing price lower, which keeps the anchor pinned inside negative-gamma territory instead of releasing it.",
-          "16,672 call OI vs 16,049 put OI is a +46.8% / +47.1% build in 6 sessions with pc_oi_ratio flat at 0.963 - both sides are adding risk at the same rate, so this is fresh positioning, not an Unwind.",
-          "12.87% ATM IV is +2.03 vol pts (+18.7%) off the 10.84% of Oct 28 and the 1-sigma day widened 7.28 -> 8.26 pts; IV expanded into the fall rather than bleeding, confirming the move was paid for and not faded."
+          "-5,795 net GEX (gamma x OI x 200) with cumulative net GEX negative at every one of the 20 listed strikes: there is no gamma flip inside 960-1150, so dealers are short gamma everywhere quoted and hedge with the move, not against it.",
+          "-2,036 net GEX in the 1010-1030 ATM band, and the chain's most negative cumulative reading is -11,032 at 1030, directly over spot 1018.1 - the amplification burden sits on top of price.",
+          "-1,066 put OI (16,049 to 14,983, -6.6%) and -71% total volume (9,545 to 2,766 contracts) in one session, with the 1000 near put wall shedding 364 OI on 229 lots: the protection built through the slide is being closed, the Unwind signature.",
+          "+494 net GEX at 1040 and +1,261 at 1050 - per-strike gamma turns positive on the 1040-1050 shelf, so upside into max pain 1040 gets dampened while the sub-1000 zone stays amplified."
         ]
       },
       "breadth": {
-        "pc_oi_ratio": 0.96,
-        "pc_vol_ratio": 0.98,
+        "pc_oi_ratio": 0.91,
+        "pc_vol_ratio": 0.58,
         "max_pain": 1040,
         "call_wall": 1100,
         "near_call_wall": 1050,
         "put_wall": 960,
         "near_put_wall": 1000,
-        "gamma_flip": 1030,
-        "one_sigma_move": 8.26,
-        "iv_atm": 12.87,
-        "iv_skew_25d": -0.18
+        "gamma_flip": null,
+        "one_sigma_move": 7.73,
+        "iv_atm": 12.05,
+        "iv_skew_25d": -0.97
       },
-      "today_summary": "1018.2 closed +0.7 after five straight down sessions totalling -48.5 pts, the first non-negative print since Oct 28. Dealers remain short gamma at -5,788 baht/pt with spot 11.8 pts below the 1030 flip, but the field repaired +2,105 from yesterday's -7,893 as 1,658 calls and 1,499 puts of new OI landed mostly above 1030. The live shelf is 1000 (2,384 put OI on 1,085 contracts of volume, 1.8% away) and the live cap is 1050 (1,830 call OI, 513 volume); the 1100 call wall at 2,326 OI traded only 275 and sits 8.0% away, so it is structural, not active. Max pain 1040 is 21.8 pts above spot and has itself drifted down from 1050, so it is following price rather than magnetising it.",
+      "today_summary": "1018.1 anchor, unchanged for a third session (1017.9 / 1018.2 / 1018.1, a 0.3-point range) after a 29.1-point slide off 1047.2. 0.58 P/C volume ratio - the lowest of the last 8 sessions, down from 0.98 - on 2,766 total contracts versus 9,545 yesterday, as put OI fell 1,066 and the 1000 near put wall lost 364 contracts. Max pain 1040 sits 21.9 points above spot while ATM IV compressed 0.82 point to 12.05%, pulling the 1-sigma day to 7.73 points. 25-delta skew at -0.97 (980 put 12.62% vs 1040 call 13.60%) with the 1020 put marked at 10.42% and the 1030 put at 9.88% - the near-money downside bid has been paid down, leaving the 960 wing put at 13.93% as the only elevated downside vol.",
       "what_changed": [
-        "Net GEX repaired +2,105 baht/pt (-7,893 -> -5,788), the first improvement since the Oct 31 sign flip, as new OI concentrated at 1050 (+195 calls) and above.",
-        "25d skew snapped +1.05 toward puts (-1.23 -> -0.18) and the 10d tail flipped put-bid (+0.45) on 1,272 contracts into the 960 put, which added 630 OI to 3,316 - tail insurance got bought even as the body stayed flat.",
-        "Gamma flip stepped down again 1040 -> 1030, the third downward migration in 5 sessions, keeping spot inside the amplifying pocket.",
-        "Total volume jumped to 9,545 from 6,281 (+52%) with price unchanged - heavy two-way flow absorbed at 1018 rather than a continuation."
+        "Put OI dropped 1,066 to 14,983 (-6.6%) while call OI fell only 218 to 16,454, pushing the P/C OI ratio to 0.91 from 0.96 - the lowest reading of the window.",
+        "Volume collapsed 71% to 2,766 contracts (1,754 call / 1,012 put) from 9,545, and the P/C volume ratio halved to 0.58 - flow is call-side and thin.",
+        "Far-OTM call OI built against the tide: 1100 +295 to 2,621 on 375 lots, 1150 +55, 1090 +29 - the only strikes accumulating are 8%+ above spot.",
+        "25-delta skew moved 0.79 point more call-rich (-0.18 to -0.97) and both 25-delta bands slid 10 points (call 1050 to 1040, put 990 to 980) as ATM IV gave back 0.82 point to 12.05%."
       ],
-      "five_day_thesis": "The defining event of the window is the Oct 31 dealer-gamma sign flip: cumulative net GEX went +3,876 (Oct 28) -> +614 (Oct 30) -> -3,127 (Oct 31) -> -7,893 (Nov 4), converting dealers from shock-absorbers into trend-amplifiers exactly as the anchor lost 30.2 pts across Oct 30-31. Both near-money walls migrated down a full 50 pts on Oct 30 (call 1100 -> 1050, put 1020 -> 1000) and have held there for 5 sessions, which built the 1000-1050 box the anchor is now trapped in. Max pain drifted 1050 -> 1040 while ATM IV expanded 10.84% -> 12.87% and OI grew +47% on both sides - the max-pain-failure signature, where real flow beats the option structure and the anchor chases the strikes rather than reverting to them. Today is the first crack in that sequence: price +0.7, GEX +2,105, 25d skew repaired +1.05, volume +52% - stabilisation at the lower edge of the box, not yet a reclaim. Until 1030 is back overhead the structure still rewards continuation over mean-reversion, which is why fading toward 1040 remains the wrong side of this tape.",
+      "five_day_thesis": "The decisive change is the GEX sign flip on 10-31: net gamma went +614 to -3,127 and the gamma flip strike vanished from 1110 to nowhere in the grid, converting dealers from fading moves to chasing them - and the anchor then fell 29.1 points from 1047.2 to 1018.1 with hedging flow pushing in the same direction. Max pain drifted down 10 points to 1040 on 11-04 and the near-money walls migrated 50 points lower on 10-30 (call 1100 to 1050, put 1020 to 1000), so the entire burden map reset one shelf down. Open interest built hard through the slide - call OI +31.8% (12,488 to 16,454) and put OI +28.7% (11,642 to 14,983) - and today is the first clear reversal of that build, concentrated in puts. ATM IV round-tripped 11.36% to a 12.87% peak on 11-05 and back to 12.05%, so the vol bid that financed the protection has deflated with price flat for three sessions. The structure is now short-gamma but unmanned: the amplifier is still wired below 1000, while the players who built it are walking away.",
       "strategies": [
         {
-          "name": "Put debit spread 1000 / 960",
-          "dir_axis": "bearish",
+          "name": "Put debit spread 1010 / 990",
+          "dir_axis": "bearish-hedge",
           "vol_axis": "long",
-          "rationale": "Short dealer gamma below the 1030 flip means a break of the live 1000 shelf (2,384 put OI, 1,085 volume, 1.8% away) forces hedging sales into the move rather than bids against it, and the 960 structural put wall at 3,316 OI marks where that acceleration is already pre-funded.",
+          "rationale": "Cumulative net GEX is -8,996 at 1000 and -9,831 at 1010 and the 1000 wall just shed 364 OI, so the support that would have absorbed a probe is thinning exactly where dealers are most short gamma and would be forced to sell futures into a break (heatmap-zones.md short-gamma amplification); the 1010 put is marked at 10.89% IV, the cheap side of a -0.97 skew, making this the least expensive way to own that asymmetry.",
           "example_legs": [
-            "+1 1000 put",
-            "-1 960 put"
+            "+1 1010 put",
+            "-1 990 put"
           ],
-          "defined_risk": "Max loss = net debit ~8.3 pts (12.5-13.0 paid on the 1000 put less ~4.7 collected on the 960 put), i.e. ~1,660 baht at 200 baht/pt; max value 40 pts at/below 960.",
-          "invalidation": "A reclaim of the 1030 gamma flip - above it per-strike dealer gamma turns positive (+5,831 cumulative from 1030 up) and hedging starts damping downside instead of feeding it."
-        },
-        {
-          "name": "Call debit spread 1030 / 1050",
-          "dir_axis": "bullish",
-          "vol_axis": "long",
-          "rationale": "The mirror of the same short-gamma field: 1030 is the strike where net GEX turns positive, so a push through it flips dealers toward long gamma and the next real supply is only the 1,830-OI 1050 near call wall 31.8 pts up - a 20-pt box that pays if today's +2,105 GEX repair extends.",
-          "example_legs": [
-            "+1 1030 call",
-            "-1 1050 call"
-          ],
-          "defined_risk": "Max loss = net debit ~7.6 pts (~15.4 paid on the 1030 call less ~7.8 collected on the 1050 call), i.e. ~1,520 baht at 200 baht/pt; max value 20 pts at/above 1050.",
-          "invalidation": "A close below 1000; losing the live put shelf re-opens the 960 tail and confirms the flip keeps migrating down instead of being reclaimed."
+          "defined_risk": "Max loss = 7.6 points net debit (1010 put at 15.9 ask, 990 put at 8.3 bid); max gain 12.4 points at/below 990; breakeven 1002.4.",
+          "invalidation": "A close above 1040, where per-strike net GEX turns +494 and the 1040-1050 shelf flips dealer hedging to dampening - the short-gamma amplification thesis is void above it."
         },
         {
           "name": "Long strangle 1000 put / 1050 call",
           "dir_axis": "neutral",
           "vol_axis": "long",
-          "rationale": "Dealers short -5,788 baht/pt of gamma amplify whichever side breaks, and the anchor is wedged 18.2 pts above the 1000 shelf and 31.8 pts below the 1050 cap with 54 DTE - the regime's direction-agnostic expression when the pocket is this tight and realised vol has been beating the 8.26-pt 1-sigma day.",
+          "rationale": "Short gamma at every listed strike with no flip to stabilise the chain means a break either way is hedged with the move, and ATM IV at 12.05% after giving back 0.82 point prices a 1-sigma day of only 7.73 points against a 50-point gap between the 1000 and 1050 strikes (option-strategy-building-blocks.md: direction unclear + cheap vol = direction-agnostic long vol).",
           "example_legs": [
             "+1 1000 put",
             "+1 1050 call"
           ],
-          "defined_risk": "Max loss = total premium ~21.2 pts (13.0 put + 8.2 call), i.e. ~4,240 baht at 200 baht/pt, realised if settlement lands between 1000 and 1050; breakevens 978.8 and 1071.2.",
-          "invalidation": "ATM IV slipping back under 11% or net GEX crossing back positive - either kills the short-gamma premise, and the 54-day theta bill is the real cost given IV has already expanded 18.7% off its Oct 28 base."
+          "defined_risk": "Max loss = 19.9 points premium paid (1000 put 11.9 ask + 1050 call 8.0 ask); breakevens 980.1 and 1069.9, inside the 56.3-point 1-sigma move over the remaining 53 days.",
+          "invalidation": "Continued 1010-1030 chop with ATM IV sliding under 11.5% - at 53 DTE theta and IV crush take the premium before a break develops; the 1050 call is also the rich leg at 13.60% IV."
         }
       ],
-      "prediction": "1018.2 holding the 1000-1050 box is the base case for the next 1-3 sessions: today's +2,105 GEX repair and +1.05 skew snap argue the fall is pausing, but with dealers still short -5,788 baht/pt and the flip 11.8 pts overhead the pocket stays amplifying, so expect range travel of roughly 1 sigma (8.26 pts) a day with fat tails rather than a clean trend. A close above 1030 flips the field toward long gamma and opens 1050; a close below 1000 un-anchors the live shelf and the 960 put wall becomes the next reference. Fading toward the 1040 max pain is the lower-probability side while max pain is still drifting down with price.",
-      "risk_note": "Educational analysis only - not trade advice, and no position sizing is implied. SET50 options are European and cash-settled on the SET50 index, so there is no physical delivery and none of the share-settlement hedging mechanics that drive pinning in single stocks; treat the 1040 max pain and the 1000/1050 walls as tendencies, not guarantees. Defined-risk is not risk-free - the capped max loss on every structure above is a real outcome, and the 1100 call wall (2,326 OI on only 275 volume, 8.0% away) is stale by the Vol2Vol filter and should not be weighted as live resistance. Macro or news flow can override the option structure outright, and with the anchor 21.8 pts below a max pain that is itself drifting down, max-pain failure is the active pattern rather than mean-reversion."
+      "prediction": "1018 is the level that matters: with dealers short gamma on the whole grid and the 1000 wall unwinding, a loss of 1000 opens 980 (25-delta) and then the 960 structural wall at 3,190 OI, while the 1040-1050 positive-gamma shelf caps rallies toward max pain 1040. The 0.58 P/C volume ratio and -71% volume argue the next move waits for new flow rather than this structure, and the Unwind zone's own prescription is to reduce engagement, not add it (regime-strategy-matrix.md). A close above 1040 invalidates the downside-amplification bias outright.",
+      "risk_note": "Educational analysis only - not trade advice, and no recommendation to execute any trade. SET50 options are cash-settled on the SET50 index with no physical delivery, so the dealer-hedging mechanics behind pinning and max-pain magnetism are structurally weaker than for share-settled single stocks: treat max pain 1040 as a tendency, not a target, especially at 53 DTE where ATM gamma is far from its expiry spike. Defined risk is not risk-free - the 7.6-point and 19.9-point max losses are real and can be lost in full. The 1100 call wall (2,621 OI, 8.0% above spot) and the 960 put wall (3,190 OI, 5.7% below) both fail the Vol2Vol proximity test and should not be weighted as active magnets; macro or news flow can override the option structure entirely."
     }
   }
 }
